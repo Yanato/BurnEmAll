@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BackgroundScroll : MonoBehaviour {
+public class BackgroundScrollNOTUSED : MonoBehaviour {
 
 	public float speed = 0.5f;
 

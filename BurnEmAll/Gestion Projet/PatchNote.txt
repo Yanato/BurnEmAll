@@ -1,0 +1,9 @@
+23/03/2016 V0.0.0 - Mickael : Creation du Git
+26/03/2016 V1.0.0 - Mickael : Creation des bases du jeu : 
+			      -Personnage avec déplacement
+			      -Double saut
+			      -Détection plateforme
+			      -Début de travail sur la caméra.
+27/03/2016 V1.0.1 - Mickael : -Smooth Camera
+                              -background qui se répete
+                              -debug camera + trouver origine du bug bloquer par le sol
