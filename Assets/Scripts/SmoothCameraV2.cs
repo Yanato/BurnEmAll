@@ -32,8 +32,11 @@ public class SmoothCameraV2 : MonoBehaviour {
 			float posX = Mathf.SmoothDamp (transform.position.x, player.transform.position.x, ref velocity.x, smoothTimeX);
 			float posY = Mathf.SmoothDamp (transform.position.y, player.transform.position.y, ref velocity.y, smoothTimeY);
 
-		if (velocity.x > 0) {
+		if (velocity.x >= 0) {
 			transform.position = new Vector3 (posX, posY, transform.position.z);
+		} else {
+			transform.position = new Vector3 (transform.position.x, posY, transform.position.z);
+
 		}
 
 		if (bounds) 
