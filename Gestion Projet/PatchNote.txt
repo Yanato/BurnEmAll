@@ -7,3 +7,8 @@
 27/03/2016 V1.0.1 - Mickael : -Smooth Camera
                               -background qui se répete
                               -debug camera + trouver origine du bug bloquer par le sol
+27/03/2016 V1.0.2 - Thibault :-Creation du Menu
+                              -Bouton Start et Exit fonctionelle
+28/03/2016 V1.0.3 - Mickael : -Parallax script
+                              -rotation bras en fonction de la souris
+                              -début d'arme
