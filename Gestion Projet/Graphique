@@ -15,3 +15,4 @@ bas gauche = X=-8.9 Y=-5
 bas droite = X= 8.9 Y=-5
 
 axe X = 9 mètre
+axe Y = 5 mètre
