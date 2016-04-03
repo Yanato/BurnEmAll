@@ -8,3 +8,7 @@ Prite 2D
 20 pixel per unit
 filter mode : point
 format 16 bit
+
+
+en 16:9 : 
+base scene = X=-7.8 Y=-5
