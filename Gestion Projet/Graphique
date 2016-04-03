@@ -18,3 +18,7 @@ haut droit = X= 8.9 Y= 5
 
 axe X = 9 mètre
 axe Y = 5 mètre
+
+ground = 0.3 mètre
+herbe/other = 0,2 mètre
+ciel = 7 mètre
