@@ -11,6 +11,7 @@ format 16 bit
 
 
 en 16:9 : 
-base scene = X=-8.9 Y=-5
+bas gauche = X=-8.9 Y=-5
+bas droite = X= 8.9 Y=-5
 
 axe X = 9 mètre
