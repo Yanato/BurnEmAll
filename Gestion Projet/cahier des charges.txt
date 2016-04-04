@@ -11,3 +11,7 @@ est d'apporter un ordinateur personnel portable. On a tout de même continuer gra
 pour notre jeu). Le professeur nous a mis en garde sur le temps restant pour réaliser le projet, sachant que
 l'on n'a pas pu avancer durant les 2h de ISN (niveau codage) et de changer de projet si vraiment le temps manquerait.
 On souhaite tout de même garder le projet en prenant compte du temps restant.
+
+Semaine 2: On a bien avancé, les bases ont été réalisé(déplacement du joueur,décor,menu partiel, plateforme).
+On peut maintenant se répartir les tâches de façon plus efficace et se tenir à jour sur l'avancement du projet sur Github.
+

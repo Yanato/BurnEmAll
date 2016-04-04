@@ -12,3 +12,12 @@
 28/03/2016 V1.0.3 - Mickael : -Parallax script
                               -rotation bras en fonction de la souris
                               -début d'arme
+29/03/2016 V1.0.4 - Groupe  : -Début du site du jeu
+			      -Arme à faire propulser,vie à ajouter, ennemie à développer		
+4/04/2016  V1.0.5 - Antoine : -Ajout du script propulsion d'arme(malheuresement le joueur est aussi propulsé)
+				Le script , appelé "projectile" est attaché au FirePoint , j'ai donc décoché le "weapon"
+				pour pouvoir effectuer des tests. J'ai ajouté les commentaires sur le script pour vous aider.
+				Une autre possibilité serait le "AddForce" http://docs.unity3d.com/ScriptReference/Rigidbody2D.AddForce.html
+				Mais je n'ai pas trouvé comment faire.
+			      -Les torches disparaissent maintenant au bout de 5 sec 
+					
