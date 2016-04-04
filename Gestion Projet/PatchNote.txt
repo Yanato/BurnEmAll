@@ -19,5 +19,5 @@
 				pour pouvoir effectuer des tests. J'ai ajouté les commentaires sur le script pour vous aider.
 				Une autre possibilité serait le "AddForce" http://docs.unity3d.com/ScriptReference/Rigidbody2D.AddForce.html
 				Mais je n'ai pas trouvé comment faire.
-			      -Les torches disparaissent maintenant au bout de 5 sec 
+			      -Les torches disparaissent maintenant au bout de 5 sec. 
 					

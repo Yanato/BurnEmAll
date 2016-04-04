@@ -21,7 +21,6 @@ public class Weapon : MonoBehaviour {
 			Debug.LogError ("No firePoint? WHAT?!");
 		}
 	}
-
 	// Update is called once per frame
 	void Update () {
 		if (fireRate == 0) {
@@ -38,9 +37,11 @@ public class Weapon : MonoBehaviour {
 	}
 
 	void Shoot () {
-		Vector2 mousePosition = new Vector2 (Camera.main.ScreenToWorldPoint (Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y);
-		Vector2 firePointPosition = new Vector2 (firePoint.position.x, firePoint.position.y);
+        Vector2 mousePosition = new Vector2 (Camera.main.ScreenToWorldPoint (Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y);
+        
+        Vector2 firePointPosition = new Vector2 (firePoint.position.x, firePoint.position.y);
 		RaycastHit2D hit = Physics2D.Raycast (firePointPosition, mousePosition-firePointPosition, 100, whatToHit);
+        
 		if (Time.time >= timeToSpawnEffect) {
 			Effect ();
 			timeToSpawnEffect = Time.time + 1/effectSpawnRate;
@@ -55,4 +56,14 @@ public class Weapon : MonoBehaviour {
 	void Effect () {
 		Instantiate (BulletTrailPrefab, firePoint.position, firePoint.rotation);
 	}
+    void DeactivateChildren(GameObject Fire,bool tir) {     // Cette ligne est
+        if (fireRate >  0)                                  //  corrompue .
+        {
+            tir = true;
+            foreach (Transform child in Fire.transform) {
+                DeactivateChildren(child.gameObject, tir);
+            }
+        }
+
+    }
 }
