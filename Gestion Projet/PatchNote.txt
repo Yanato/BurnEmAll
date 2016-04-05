@@ -14,10 +14,13 @@
                               -début d'arme
 29/03/2016 V1.0.4 - Groupe  : -Début du site du jeu
 			      -Arme à faire propulser,vie à ajouter, ennemie à développer		
-4/04/2016  V1.0.5 - Antoine : -Ajout du script propulsion d'arme(malheuresement le joueur est aussi propulsé)
+04/04/2016 V1.0.5 - Antoine : -Ajout du script propulsion d'arme(malheuresement le joueur est aussi propulsé)
 				Le script , appelé "projectile" est attaché au FirePoint , j'ai donc décoché le "weapon"
 				pour pouvoir effectuer des tests. J'ai ajouté les commentaires sur le script pour vous aider.
 				Une autre possibilité serait le "AddForce" http://docs.unity3d.com/ScriptReference/Rigidbody2D.AddForce.html
 				Mais je n'ai pas trouvé comment faire.
 			      -Les torches disparaissent maintenant au bout de 5 sec. 
-					
+05/04/2016 V1.0.6 - Mickael : -Incorporation de tout les nouceaux graphismes réalisés les 2 jours précédents
+			      -Changement du systeme de déplacement avec incorporation d'animation
+			      -Bras pivotant revue
+			      Sinon j'ai fait n'importe quoi mais il faut pas le dire on vera plus tard
