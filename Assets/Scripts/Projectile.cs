@@ -11,7 +11,9 @@ public class Projectile : MonoBehaviour {   // Il faut attacher ce script au "Fi
     {
         BulletTrailPrefab = Resources.Load("bullet") as GameObject;  // Bizarrement il faut créer un dossier resources pour qu'il le trouve,
                                                                      // si on laisse dans "prefabs" il ne trouve pas.(J'ai déjà
-    }                                                               // essayé de remplacer "Resources" par "Prefabs")
+																	// essayé de remplacer "Resources" par "Prefabs")
+	}                                                              
+
     void Update()
     {
         if (fireRate == 0)

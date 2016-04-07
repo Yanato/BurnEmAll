@@ -24,12 +24,16 @@
 			      -Changement du systeme de déplacement avec incorporation d'animation
 			      -Bras pivotant revue
 			      Sinon j'ai fait n'importe quoi mais il faut pas le dire on vera plus tard
-Même date que mon voisin de 
-dessus 		  - Antoine : -Il est maintenant possible de snip avec la torche, toutefois elles tombent sous le sol.
+
+		  - Antoine : -Il est maintenant possible de snip avec la torche, toutefois elles tombent sous le sol.
 				(Décocher le Ontrigger de bullet dans resources)
 			       Il faudra utiliser le "Oncollision" je pense, je verrai comment ça marche.
 			      -Ajout du script de vie(Ontrigger)
 			      -Ajout des dégats dans le script "Disparation"
 			      -J'ai laissé les commentaires comme à mon habitude.
-			      
-	
+06/04/2016 V1.0.7 - Mickael : -débug et amélioration du bras en fonction de la position souris (ne fonctionnait pas lorsque le personnage reculait)			      
+			et    -Désormais plus besoin que le bullet soit Ontrigger, les balles ne traversent donc plus le sol.
+		    Antoine
+07/04/2016 V1.0.8 - Mickael : -disparition de la torche lorsque le bullet est lancé puis réaparition quand on peut re tirer
+			      -début de travail avec les effets de feu
+			      -ajout d'un script pour que le layer du feu soit devant celui d'un autre layer créer.
