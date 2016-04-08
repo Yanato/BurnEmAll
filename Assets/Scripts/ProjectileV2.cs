@@ -23,11 +23,8 @@ public class ProjectileV2 : MonoBehaviour {   // Il faut attacher ce script au "
 		{
 			if (Input.GetButtonDown("Fire1"))
 			{
-
 				Shoot();
-
-
-			}
+                }
 		}
 		else {
 
@@ -54,4 +51,5 @@ public class ProjectileV2 : MonoBehaviour {   // Il faut attacher ce script au "
 		Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();        // C'est ça qui va permettre à la torche de voler 
 		rb.velocity = (dir * amount);                               //il tire maintenant selon la pos de la souris
 	}
+
 }

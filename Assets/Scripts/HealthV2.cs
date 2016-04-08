@@ -3,7 +3,7 @@ using System.Collections;
 
 public class HealthV2 : MonoBehaviour
 {
-	public int hp = 1;
+	public float hp = 1;
 
 	void OnCollisionEnter2D(Collision2D collider)
 	{

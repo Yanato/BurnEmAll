@@ -3,15 +3,14 @@ using System.Collections;
 
 public class Disparation : MonoBehaviour
 {                                       // à attacher sur "bullet" de "Resources"
-    public int damage = 1;              // Rip Tiborc
+    public float damage = 1;              // Rip Tiborc
     public bool isEnemyShot = false;
+    public int disparation = 5;         // On pourra changer selon l'arme comme ça
 
     // Update is called once per frame
     void Update()
     {
-        if (gameObject.name == "bullet(Clone)")
-        {
-            Destroy(gameObject, 5);
-        }
+        Destroy(gameObject, disparation);
     }
+
 }

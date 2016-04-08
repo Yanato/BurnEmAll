@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Health : MonoBehaviour {
-    public int hp = 1;
+    public float hp = 1;
 
     /// <summary>
     /// Ennemi ou joueur ?

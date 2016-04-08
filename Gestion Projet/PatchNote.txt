@@ -37,3 +37,8 @@
 07/04/2016 V1.0.8 - Mickael : -disparition de la torche lorsque le bullet est lancé puis réaparition quand on peut re tirer
 			      -début de travail avec les effets de feu
 			      -ajout d'un script pour que le layer du feu soit devant celui d'un autre layer créer.
+
+08/04/2016	  - Groupe :  -ajout de la touche CAC
+			      -ajout du feu
+			      -dessin des ennemis en pixel
+			      -travail à faire : dégats sur le temps + IA des ennemis
