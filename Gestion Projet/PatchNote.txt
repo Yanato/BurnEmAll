@@ -1,54 +1,57 @@
 23/03/2016 V0.0.0 - Mickael : Creation du Git
 26/03/2016 V1.0.0 - Mickael : Creation des bases du jeu : 
-			      -Personnage avec dÈplacement
+			      -Personnage avec d√©placement
 			      -Double saut
-			      -DÈtection plateforme
-			      -DÈbut de travail sur la camÈra.
+			      -D√©tection plateforme
+			      -D√©but de travail sur la cam√©ra.
 27/03/2016 V1.0.1 - Mickael : -Smooth Camera
-                              -background qui se rÈpete
+                              -background qui se r√©pete
                               -debug camera + trouver origine du bug bloquer par le sol
 27/03/2016 V1.0.2 - Thibault :-Creation du Menu
                               -Bouton Start et Exit fonctionelle
 28/03/2016 V1.0.3 - Mickael : -Parallax script
                               -rotation bras en fonction de la souris
-                              -dÈbut d'arme
-29/03/2016 V1.0.4 - Groupe  : -DÈbut du site du jeu
-			      -Arme ‡ faire propulser,vie ‡ ajouter, ennemie ‡ dÈvelopper		
-04/04/2016 V1.0.5 - Antoine : -Ajout du script propulsion d'arme(malheuresement le joueur est aussi propulsÈ)
-				Le script , appelÈ "projectile" est attachÈ au FirePoint , j'ai donc dÈcochÈ le "weapon"
-				pour pouvoir effectuer des tests. J'ai ajoutÈ les commentaires sur le script pour vous aider.
-				Une autre possibilitÈ serait le "AddForce" http://docs.unity3d.com/ScriptReference/Rigidbody2D.AddForce.html
-				Mais je n'ai pas trouvÈ comment faire.
+                              -d√©but d'arme
+29/03/2016 V1.0.4 - Groupe  : -D√©but du site du jeu
+			      -Arme √† faire propulser,vie √† ajouter, ennemie √† d√©velopper		
+04/04/2016 V1.0.5 - Antoine : -Ajout du script propulsion d'arme(malheuresement le joueur est aussi propuls√©)
+				Le script , appel√© "projectile" est attach√© au FirePoint , j'ai donc d√©coch√© le "weapon"
+				pour pouvoir effectuer des tests. J'ai ajout√© les commentaires sur le script pour vous aider.
+				Une autre possibilit√© serait le "AddForce" http://docs.unity3d.com/ScriptReference/Rigidbody2D.AddForce.html
+				Mais je n'ai pas trouv√© comment faire.
 			      -Les torches disparaissent maintenant au bout de 5 sec. 
-05/04/2016 V1.0.6 - Mickael : -Incorporation de tout les nouceaux graphismes rÈalisÈs les 2 jours prÈcÈdents
-			      -Changement du systeme de dÈplacement avec incorporation d'animation
+05/04/2016 V1.0.6 - Mickael : -Incorporation de tout les nouceaux graphismes r√©alis√©s les 2 jours pr√©c√©dents
+			      -Changement du systeme de d√©placement avec incorporation d'animation
 			      -Bras pivotant revue
 			      Sinon j'ai fait n'importe quoi mais il faut pas le dire on vera plus tard
 
 		  - Antoine : -Il est maintenant possible de snip avec la torche, toutefois elles tombent sous le sol.
-				(DÈcocher le Ontrigger de bullet dans resources)
-			       Il faudra utiliser le "Oncollision" je pense, je verrai comment Áa marche.
+				(D√©cocher le Ontrigger de bullet dans resources)
+			       Il faudra utiliser le "Oncollision" je pense, je verrai comment √ßa marche.
 			      -Ajout du script de vie(Ontrigger)
-			      -Ajout des dÈgats dans le script "Disparation"
-			      -J'ai laissÈ les commentaires comme ‡ mon habitude.
-06/04/2016 V1.0.7 - Mickael : -dÈbug et amÈlioration du bras en fonction de la position souris (ne fonctionnait pas lorsque le personnage reculait)			      
-			et    -DÈsormais plus besoin que le bullet soit Ontrigger, les balles ne traversent donc plus le sol.
+			      -Ajout des d√©gats dans le script "Disparation"
+			      -J'ai laiss√© les commentaires comme √† mon habitude.
+06/04/2016 V1.0.7 - Mickael : -d√©bug et am√©lioration du bras en fonction de la position souris (ne fonctionnait pas lorsque le personnage reculait)			      
+			et    -D√©sormais plus besoin que le bullet soit Ontrigger, les balles ne traversent donc plus le sol.
 		    Antoine
-07/04/2016 V1.0.8 - Mickael : -disparition de la torche lorsque le bullet est lancÈ puis rÈaparition quand on peut re tirer
-			      -dÈbut de travail avec les effets de feu
-			      -ajout d'un script pour que le layer du feu soit devant celui d'un autre layer crÈer.
+07/04/2016 V1.0.8 - Mickael : -disparition de la torche lorsque le bullet est lanc√© puis r√©aparition quand on peut re tirer
+			      -d√©but de travail avec les effets de feu
+			      -ajout d'un script pour que le layer du feu soit devant celui d'un autre layer cr√©er.
 
 08/04/2016	  - Groupe :  -ajout de la touche CAC
 			      -ajout du feu
 			      -dessin des ennemis en pixel
-			      -travail ‡ faire : dÈgats sur le temps + IA des ennemis
-11/04/2016 V1.0.8 - Mickael : -j'ai enfin rÈussi ‡ rÈgler mon problËme de collision entre particules et objets
-			      -j'ai nettoyÈ le projet des anciens scripts/graphiques non utilisÈs
-			      -j'ai commencÈ ‡ rÈflÈchir sur les prochains scripts.
+			      -travail √† faire : d√©gats sur le temps + IA des ennemis
+11/04/2016 V1.0.8 - Mickael : -j'ai enfin r√©ussi √† r√©gler mon probl√®me de collision entre particules et objets
+			      -j'ai nettoy√© le projet des anciens scripts/graphiques non utilis√©s
+			      -j'ai commenc√© √† r√©fl√©chir sur les prochains scripts.
 13/04/2016 V1.0.9 - Mickael : -Les ennemies peuvent maintenant mourrir au contact du feu
 			      - Le feu s'accroche aux ennemies
-			      - Gros dÈbut de travail sur un dÈcore pouvant bruler
-			      - diffÈrentes rÈactions des armes/du feu en fonction des dÈcores
-			      - division du sol en 12 ÈlÈments pour aller avec ce nouveau systeme
+			      - Gros d√©but de travail sur un d√©core pouvant bruler
+			      - diff√©rentes r√©actions des armes/du feu en fonction des d√©cores
+			      - division du sol en 12 √©l√©ments pour aller avec ce nouveau systeme
 			      - script : edited -> ProjectileCAC, DuFEU - new -> decoreBurn, DamagesWithoutDisparition
-			      - ajout d'une liste des choses ‡ faire
+			      - ajout d'une liste des choses √† faire
+14/04/2016 V1.1.0 - Mickael : -Le gameplay sur le feu est fini, presque tout peut prendre feu
+			      - ajout de 2 types de bois, de fum√©e, d√©grad√© vers le noir lorsque quelque chose brule
+			      
