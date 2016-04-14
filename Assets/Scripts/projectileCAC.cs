@@ -22,7 +22,7 @@ public class projectileCAC : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetButton("Fire2") && FirePoint.enabled)
+        if (Input.GetButton("Fire1") && FirePoint.enabled)
         {
             fire.SetActive(true);
 			torche.GetComponent<PolygonCollider2D> ().enabled = true;

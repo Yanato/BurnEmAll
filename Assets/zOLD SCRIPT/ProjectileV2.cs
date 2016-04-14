@@ -21,7 +21,7 @@ public class ProjectileV2 : MonoBehaviour {   // Il faut attacher ce script au "
 	{
 		if (fireRate == 0)
 		{
-			if (Input.GetButtonDown("Fire1"))
+			if (Input.GetButtonDown("Fire2"))
 			{
 				Shoot();
                 }
@@ -32,7 +32,7 @@ public class ProjectileV2 : MonoBehaviour {   // Il faut attacher ce script au "
 				FirePoint.enabled = true;							
 			}
 
-			if (Input.GetButton("Fire1") && Time.time > timeToFire)
+			if (Input.GetButton("Fire2") && Time.time > timeToFire)
 			{
 
 				timeToFire = Time.time + 1 / fireRate;              // L'idée ce serait de "cacher" la torche 
