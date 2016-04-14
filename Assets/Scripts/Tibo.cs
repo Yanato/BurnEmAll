@@ -8,12 +8,17 @@ public class Tibo : MonoBehaviour
 
     void Update()
     {
+        var epos = gameObject.transform.position;
         var player = GameObject.Find("Player");
-        Vector3 ppos = (player.transform.position).normalized;
-        Vector3 mp = Camera.main.ScreenToWorldPoint(transform.position);
-        Vector2 Sens = new Vector2(ppos.x-mp.x,ppos.y-mp.y).normalized;
-        Vector2 BougeSonGrosCul = new Vector2(ppos.x * speed.x,ppos.y*speed.y);
+        Vector3 ppos = (player.transform.position);
+        Vector2 Sens = new Vector2(ppos.x - epos.x, ppos.y - epos.y).normalized;
+        var ypos = (ppos.y - epos.y);
+        var xpos = (ppos.x - epos.x);
+        Vector2 BougeSonGrosCul = new Vector2(Sens.x * speed.x, Sens.y * 1);
+        if((xpos > 1.5) && (Sens.y>0.5)) {
+            BougeSonGrosCul = new Vector2(Sens.x * speed.x, Sens.y * 10);
+        }
         GetComponent<Rigidbody2D>().velocity = BougeSonGrosCul;
-        Debug.Log(ppos);
+        Debug.Log(ypos + "azeij" + xpos + "vecteur b-a" + Sens + "bouge" + BougeSonGrosCul);
     }
 }
