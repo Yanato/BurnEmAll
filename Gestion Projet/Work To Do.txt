@@ -1,17 +1,15 @@
 -Finir le gameplay de base (=le feu) :
-décore et ennemi qui brule = presque fini
-feu non supperposable pour limiter l'abus
-voir si possibilité de griser les choses = brulé / animation à la mort du perso
-creation de décor destructible = bois
+feu non supperposable pour limiter l'abus (optionelle)
+
 
 - monstres :
 faire l'IA
-faire les dégats associés
+faire les dÃ©gats associÃ©s
 faire animation mort
 
 - GUI :
 points de vie du perso et ennemies
-menu de lancement avec crédits
+menu de lancement avec crÃ©dits
 menu pause
 menu de mort avec restart
 
@@ -22,15 +20,15 @@ level design
 
 
 - Parallele (les barres) :
-réalisation du site web (ISN)
+rÃ©alisation du site web (ISN)
 
 NOTE AUX DEVELOPPEURS :
 
 Thibault :
 - AU TRAVAIL PUTAIN !
 
-Mickael (note à moi même) : 
--Stop les graphismes et stop débug comme une pute un jeu comme ça et avance sur le principale
+Mickael (note Ã  moi mÃªme) : 
+-Stop les graphismes et stop dÃ©bug comme une pute un jeu comme Ã§a et avance sur le principale
 
 Antoine : 
 -Courage le plus gros est fait (quoi que), viens faire l'IA !
