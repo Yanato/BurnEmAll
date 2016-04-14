@@ -1,0 +1,36 @@
+-Finir le gameplay de base (=le feu) :
+décore et ennemi qui brule = presque fini
+feu non supperposable pour limiter l'abus
+voir si possibilité de griser les choses = brulé / animation à la mort du perso
+creation de décor destructible = bois
+
+- monstres :
+faire l'IA
+faire les dégats associés
+faire animation mort
+
+- GUI :
+points de vie du perso et ennemies
+menu de lancement avec crédits
+menu pause
+menu de mort avec restart
+
+
+- Fin de projet :
+ajout des sons
+level design
+
+
+- Parallele (les barres) :
+réalisation du site web (ISN)
+
+NOTE AUX DEVELOPPEURS :
+
+Thibault :
+- AU TRAVAIL PUTAIN !
+
+Mickael (note à moi même) : 
+-Stop les graphismes et stop débug comme une pute un jeu comme ça et avance sur le principale
+
+Antoine : 
+-Courage le plus gros est fait (quoi que), viens faire l'IA !

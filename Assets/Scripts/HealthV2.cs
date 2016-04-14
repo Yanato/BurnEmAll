@@ -12,6 +12,16 @@ public class HealthV2 : MonoBehaviour
 		{
 			hp -= bullet.damage;
 		}
+
+		if (hp <= 0)
+		{
+			Destroy(gameObject);
+		}
+	}
+	void OnParticleCollision(GameObject other)
+	{
+		hp--;
+
 		if (hp <= 0)
 		{
 			Destroy(gameObject);

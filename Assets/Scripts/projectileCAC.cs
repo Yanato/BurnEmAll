@@ -5,6 +5,7 @@ public class projectileCAC : MonoBehaviour
 {
 
     public GameObject fire;
+	public GameObject torche;
     private Renderer FirePoint;
 
 
@@ -12,6 +13,8 @@ public class projectileCAC : MonoBehaviour
     {
         fire.SetActive(false);
         FirePoint = GetComponent<Renderer>();
+		torche.GetComponent<PolygonCollider2D> ().enabled = false;
+
 
     }
 
@@ -22,9 +25,12 @@ public class projectileCAC : MonoBehaviour
         if (Input.GetButton("Fire2") && FirePoint.enabled)
         {
             fire.SetActive(true);
-        }
+			torche.GetComponent<PolygonCollider2D> ().enabled = true;
+		}
         else {
             fire.SetActive(false);
+			torche.GetComponent<PolygonCollider2D> ().enabled = false;
+
         }
 
 

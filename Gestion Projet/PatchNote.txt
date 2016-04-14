@@ -42,6 +42,13 @@
 			      -ajout du feu
 			      -dessin des ennemis en pixel
 			      -travail à faire : dégats sur le temps + IA des ennemis
-11/04/2016 V1.0.8 - Mickael:  -j'ai enfin réussi à régler mon problème de collision entre particules et objets
+11/04/2016 V1.0.8 - Mickael : -j'ai enfin réussi à régler mon problème de collision entre particules et objets
 			      -j'ai nettoyé le projet des anciens scripts/graphiques non utilisés
 			      -j'ai commencé à réfléchir sur les prochains scripts.
+13/04/2016 V1.0.9 - Mickael : -Les ennemies peuvent maintenant mourrir au contact du feu
+			      - Le feu s'accroche aux ennemies
+			      - Gros début de travail sur un décore pouvant bruler
+			      - différentes réactions des armes/du feu en fonction des décores
+			      - division du sol en 12 éléments pour aller avec ce nouveau systeme
+			      - script : edited -> ProjectileCAC, DuFEU - new -> decoreBurn, DamagesWithoutDisparition
+			      - ajout d'une liste des choses à faire
