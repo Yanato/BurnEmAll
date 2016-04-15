@@ -56,3 +56,5 @@
 			      - ajout de 2 types de bois, de fumée, dégradé vers le noir lorsque quelque chose brule
 14/04/2016 V1.1.1 - Groupe  : - Travail sur la barre de vie + Vie du personnage.
 			      - travail sur l'IA
+			      - Le jeu s'adapte désormais a la taille de l'écran (la résolution reste 16/9 en toute circonstances)
+			      - les boutons et le gui s'adaptent désormais à la taille de l'écran (proportionnelle)

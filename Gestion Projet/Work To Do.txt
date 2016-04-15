@@ -1,16 +1,12 @@
--Finir le gameplay de base (=le feu) :
-décore et ennemi qui brule = presque fini
-feu non supperposable pour limiter l'abus
-voir si possibilité de griser les choses = brulé / animation à la mort du perso
-creation de décor destructible = bois
+
 
 - monstres :
-faire l'IA
+faire l'IA (lapin = déja pas mal)
 faire les dégats associés
-faire animation mort
+faire animation mort du personnage
 
 - GUI :
-points de vie du perso et ennemies
+points de vie du perso et ennemies (en cours)
 menu de lancement avec crédits
 menu pause
 menu de mort avec restart
