@@ -42,9 +42,11 @@
 			      -ajout du feu
 			      -dessin des ennemis en pixel
 			      -travail à faire : dégats sur le temps + IA des ennemis
+
 11/04/2016 V1.0.8 - Mickael : -j'ai enfin réussi à régler mon problème de collision entre particules et objets
 			      -j'ai nettoyé le projet des anciens scripts/graphiques non utilisés
 			      -j'ai commencé à réfléchir sur les prochains scripts.
+
 13/04/2016 V1.0.9 - Mickael : -Les ennemies peuvent maintenant mourrir au contact du feu
 			      - Le feu s'accroche aux ennemies
 			      - Gros début de travail sur un décore pouvant bruler
@@ -52,9 +54,18 @@
 			      - division du sol en 12 éléments pour aller avec ce nouveau systeme
 			      - script : edited -> ProjectileCAC, DuFEU - new -> decoreBurn, DamagesWithoutDisparition
 			      - ajout d'une liste des choses à faire
+
 14/04/2016 V1.1.0 - Mickael : -Le gameplay sur le feu est fini, presque tout peut prendre feu
 			      - ajout de 2 types de bois, de fumée, dégradé vers le noir lorsque quelque chose brule
 14/04/2016 V1.1.1 - Groupe  : - Travail sur la barre de vie + Vie du personnage.
+
 			      - travail sur l'IA
 			      - Le jeu s'adapte désormais a la taille de l'écran (la résolution reste 16/9 en toute circonstances)
 			      - les boutons et le gui s'adaptent désormais à la taille de l'écran (proportionnelle)
+
+15/01/2016 V1.1.2 - Antoine : -IA du lapin fini
+		      et      -IA de la fleur fini
+		    Mickael   -IA de l'oiseau en cours
+			      -débug définitif du blocage au sol du personnage (probleme de collider)
+			      -recherche et travail (script et graphique) sur l'introduction
+			      -début de recherche sur la limitation de la superposition du feu (pour limiter l'abus)

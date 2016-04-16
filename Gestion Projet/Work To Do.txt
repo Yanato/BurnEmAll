@@ -1,12 +1,12 @@
 
 
 - monstres :
-faire l'IA (lapin = déja pas mal)
-faire les dégats associés
-faire animation mort du personnage
+Finir IA oiseau + jeté (avec dégats)
+Faire IA ours avec dégats
+
 
 - GUI :
-points de vie du perso et ennemies (en cours)
+points de vie des ennemies
 menu de lancement avec crédits
 menu pause
 menu de mort avec restart
@@ -15,6 +15,7 @@ menu de mort avec restart
 - Fin de projet :
 ajout des sons
 level design
+faire animation mort du personnage
 
 
 - Parallele (les barres) :

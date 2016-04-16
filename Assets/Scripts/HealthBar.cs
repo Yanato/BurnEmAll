@@ -26,9 +26,8 @@ public class HealthBar : MonoBehaviour
 		}
 		if (collision.gameObject.tag == "flower") 
 		{
-			if (cur_health < max_health)
-			{
-				cur_health += 1;
+			if (cur_health > 0) {
+				cur_health -= 5;
 				UpdateHealthBar (cur_health);
 			}
 				
