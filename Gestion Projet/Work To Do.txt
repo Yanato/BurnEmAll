@@ -1,12 +1,8 @@
-
-
 - monstres :
 Finir IA oiseau + jeté (avec dégats)
 Faire IA ours avec dégats
 
-
 - GUI :
-points de vie des ennemies
 menu de lancement avec crédits
 menu pause
 menu de mort avec restart

@@ -7,13 +7,12 @@ public class Projectile : MonoBehaviour
     public float fireRate = 0;
     public float timeToFire = 0;
     GameObject BulletTrailPrefab;                                     // j'ai putin de galéré pour enfin trouver un code qui marche à peu près
-    GameObject Fire;
     private Renderer FirePoint;
     void Start()
     {
         BulletTrailPrefab = Resources.Load("bullet") as GameObject;  // Bizarrement il faut créer un dossier resources pour qu'il le trouve,
         FirePoint = GetComponent<Renderer>();                        // si on laisse dans "prefabs" il ne trouve pas.(J'ai déjà
-        Fire = Resources.Load("fire torche") as GameObject;         // essayé de remplacer "Resources" par "Prefabs")
+       // essayé de remplacer "Resources" par "Prefabs")
     }
 
     void Update()
