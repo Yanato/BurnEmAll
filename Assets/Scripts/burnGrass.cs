@@ -4,12 +4,11 @@ using System.Collections;
 public class burnGrass : MonoBehaviour {
 
 	GameObject Fire;
-	public GameObject decore;
 	private Transform decor;
 	void Start() 
 	{
 		Fire = Resources.Load("Fire torche") as GameObject;
-		decor = decore.transform;
+		decor = gameObject.transform;
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) 

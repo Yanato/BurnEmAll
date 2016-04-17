@@ -9,7 +9,40 @@ public class HealthBar : MonoBehaviour
 	public RectTransform TailleBar;
 
 	public int max_health = 10;
-	public int cur_health = 10;	
+	public static int cur_health = 10;	
+
+	public static bool isDead = false;
+	public GameObject deadMenu;
+
+	void start ()
+	{
+		deadMenu.SetActive(false);
+	}
+
+	void Update()
+	{
+
+		if (cur_health == 0) {
+			Debug.Log (cur_health);
+			isDead = true;
+			Transform character = gameObject.GetComponent<Transform>();
+			character.rotation = Quaternion.Euler (0, 0, 90);
+			character.position = character.position - new Vector3 (-0.005f, 0, 0);
+
+		}
+
+
+	}
+
+	void OnGUI()
+	{
+		if (isDead) {
+			deadMenu.SetActive (true);
+
+		} else {
+			deadMenu.SetActive (false);
+		}
+	}
 
 
 	void OnCollisionEnter2D(Collision2D collision)

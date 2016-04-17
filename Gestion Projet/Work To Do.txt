@@ -4,15 +4,16 @@ Faire IA ours avec dégats
 
 - GUI :
 menu de lancement avec crédits
-menu pause
-menu de mort avec restart
-
 
 - Fin de projet :
+credit et début d'histoire qui brulle
 ajout des sons
 level design
-faire animation mort du personnage
+si Personnage tombe (pas de sol) = mort
+quelque débug a faire au niveau du feu (dégats/collisions)
+faire quelque chose pour changer les touches dans les options
 
+texture (lave/eau?) pour tuer si pas de sol
 
 - Parallele (les barres) :
 réalisation du site web (ISN)
@@ -21,9 +22,3 @@ NOTE AUX DEVELOPPEURS :
 
 Thibault :
 - AU TRAVAIL PUTAIN !
-
-Mickael (note à moi même) : 
--Stop les graphismes et stop débug comme une pute un jeu comme ça et avance sur le principale
-
-Antoine : 
--Courage le plus gros est fait (quoi que), viens faire l'IA !

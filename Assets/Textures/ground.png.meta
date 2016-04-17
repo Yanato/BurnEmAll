@@ -1,21 +1,21 @@
 fileFormatVersion: 2
-guid: 4fd91736cd40a654dac134092372f928
-timeCreated: 1460591379
+guid: 10aaeae294f992c46b46785d320fe882
+timeCreated: 1460912243
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: ground_0
-    21300002: ground_1
-    21300004: ground_2
-    21300006: ground_3
-    21300008: ground_4
-    21300010: ground_5
-    21300012: ground_6
-    21300014: ground_7
-    21300016: ground_8
-    21300018: ground_9
-    21300020: ground_10
-    21300022: ground_11
+    21300000: ground1
+    21300002: ground2
+    21300004: ground3
+    21300006: ground4
+    21300008: ground5
+    21300010: ground6
+    21300012: ground7
+    21300014: ground8
+    21300016: ground9
+    21300018: ground10
+    21300020: ground11
+    21300022: ground12
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -62,132 +62,132 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: ground_0
+    - name: ground1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 10
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ground2
       rect:
         serializedVersion: 2
         x: 10
-        y: 90
+        y: 0
         width: 10
         height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: ground_1
+    - name: ground3
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 10
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ground4
       rect:
         serializedVersion: 2
         x: 30
-        y: 90
+        y: 0
         width: 10
         height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: ground_2
+    - name: ground5
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 10
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ground6
       rect:
         serializedVersion: 2
         x: 50
-        y: 90
+        y: 0
         width: 10
         height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: ground_3
+    - name: ground7
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 10
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: ground8
       rect:
         serializedVersion: 2
         x: 70
-        y: 90
+        y: 0
         width: 10
         height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: ground_4
+    - name: ground9
       rect:
         serializedVersion: 2
-        x: 10
-        y: 50
+        x: 80
+        y: 0
         width: 10
         height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: ground_5
+    - name: ground10
       rect:
         serializedVersion: 2
-        x: 30
-        y: 50
+        x: 90
+        y: 0
         width: 10
         height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: ground_6
+    - name: ground11
       rect:
         serializedVersion: 2
-        x: 50
-        y: 50
+        x: 100
+        y: 0
         width: 10
         height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: ground_7
+    - name: ground12
       rect:
         serializedVersion: 2
-        x: 70
-        y: 50
-        width: 10
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: ground_8
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 10
-        width: 10
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: ground_9
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 10
-        width: 10
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: ground_10
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 10
-        width: 10
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-    - name: ground_11
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 10
+        x: 110
+        y: 0
         width: 10
         height: 30
       alignment: 0
