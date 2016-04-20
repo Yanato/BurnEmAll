@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour {
 
-	bool isPause = false;
+	public bool isPause = false;
 	public GameObject menu;
 
 	void start ()
@@ -23,6 +23,7 @@ public class PauseMenu : MonoBehaviour {
 		if (isPause)
 		{
 			Time.timeScale = 0;
+            Debug.Log("tibo");
 		}else{
 			Time.timeScale = 1;
 		}
