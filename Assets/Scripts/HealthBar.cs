@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class HealthBar : MonoBehaviour
 {
@@ -9,10 +11,13 @@ public class HealthBar : MonoBehaviour
 	public RectTransform TailleBar;
 
 	public int max_health = 10;
-	public static int cur_health = 10;	
+	public static int cur_health = 10;
+	public static int life = 3;
 
 	public static bool isDead = false;
 	public GameObject deadMenu;
+	int i = 0;
+
 
 	void start ()
 	{
@@ -21,14 +26,19 @@ public class HealthBar : MonoBehaviour
 
 	void Update()
 	{
-
 		if (cur_health == 0) {
-			Debug.Log (cur_health);
-			isDead = true;
+			HealthBar.cur_health = 10;
+			SceneManager.LoadScene ("Level1");
+			life--;
+
+		}
+		if (life == 0) {
 			Transform character = gameObject.GetComponent<Transform>();
 			character.rotation = Quaternion.Euler (0, 0, 90);
-			character.position = character.position - new Vector3 (-0.005f, 0, 0);
-
+			i++;
+			if (i > 50) {
+				isDead = true;
+			}
 		}
 
 

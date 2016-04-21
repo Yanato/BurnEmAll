@@ -11,7 +11,7 @@ public class LOISO : MonoBehaviour
     GameObject bear;
 
     void Update(){
-        bear = Resources.Load("Teddy") as GameObject;       // on le transformera en mrd de pigeon
+        bear = Resources.Load("wood box") as GameObject;       // on le transformera en mrd de pigeon
         var canard = gameObject.transform.position;
         var player = GameObject.Find("Player");
         Vector2 ppos = player.transform.position;

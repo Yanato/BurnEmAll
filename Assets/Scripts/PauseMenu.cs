@@ -20,7 +20,7 @@ public class PauseMenu : MonoBehaviour {
 		}
 
 
-		if (isPause)
+		if (isPause || HealthBar.isDead)
 		{
 			Time.timeScale = 0;
             Debug.Log("tibo");
@@ -28,11 +28,6 @@ public class PauseMenu : MonoBehaviour {
 			Time.timeScale = 1;
 		}
 
-		if (HealthBar.isDead) {
-			Time.timeScale = 0;
-		} else {
-			Time.timeScale = 1;
-		}
 
 	}
 

@@ -75,3 +75,6 @@
 17/04/2016 V1.1.4 - Mickael : - Menu pause fait
 			      - menu mort/restart fait - animation de mort
 			      - derniere amélioration au niveau du sol. + ajout d'un sol incliné
+21/04/2016 V1.1.5 - Mickael : - Systeme de nombre de vie (x3) en plus de la santé
+			      - Débug du menu pause
+                              - Incorportation d'un "checkpoint", prochainement le systeme qui va avec. 
