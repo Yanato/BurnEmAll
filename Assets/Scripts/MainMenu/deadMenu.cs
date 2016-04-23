@@ -11,7 +11,11 @@ public class deadMenu : MonoBehaviour {
 	{
 		HealthBar.isDead = false;
 		HealthBar.cur_health = 10;
+		HealthBar.life = 3;
 		SceneManager.LoadScene ("Level1");
 
+	}
+	public void Exit (){
+		SceneManager.LoadScene ("Menu");
 	}
 }

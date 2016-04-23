@@ -4,14 +4,12 @@ using UnityEngine.UI;
 
 public class life : MonoBehaviour {
 
-	string message;
 	Text texte;
 	int i;
 
 	// Use this for initialization
 	void Start() {
 		texte = GetComponent<Text>();
-		message = texte.text;
 	}
 	
 	// Update is called once per frame

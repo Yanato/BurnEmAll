@@ -1,19 +1,29 @@
 - monstres :
-Finir IA oiseau + jeté (avec dégats)
 Faire IA ours avec dégats
 
 - GUI :
 menu de lancement avec crédits
+credit = musique "je code avec le cul"
 
 - Fin de projet :
+LIMITE LE FEU
+Checkpoint : 
+- totem en feu, get pos quand il brule (collide with trigger comme les arbres -> déclanche save)
+- save de la pos pour le continue de façon persistante = fichier à part ?
+
 credit et début d'histoire qui brulle
 ajout des sons
 level design
-si Personnage tombe (pas de sol) = mort
 quelque débug a faire au niveau du feu (dégats/collisions)
 faire quelque chose pour changer les touches dans les options
 
-texture (lave/eau?) pour tuer si pas de sol
+bug lorsqu'on quitte vers le menu et que on relance (sensé reset tout : fait comme un continue)
+
+
+
+
+
+
 
 - Parallele (les barres) :
 réalisation du site web (ISN)

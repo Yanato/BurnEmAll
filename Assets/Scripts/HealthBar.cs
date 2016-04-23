@@ -15,35 +15,38 @@ public class HealthBar : MonoBehaviour
 	public static int life = 3;
 
 	public static bool isDead = false;
+	public static bool isContinue = false;
 	public GameObject deadMenu;
-	int i = 0;
+	public GameObject continueMenu;
+
 
 
 	void start ()
 	{
 		deadMenu.SetActive(false);
+		continueMenu.SetActive(false);
+
 	}
 
 	void Update()
 	{
-		if (cur_health == 0) {
-			HealthBar.cur_health = 10;
-			SceneManager.LoadScene ("Level1");
-			life--;
+		UpdateHealthBar (cur_health);
 
+		if (cur_health == 0) {
+			Transform character = gameObject.GetComponent<Transform>();
+			character.rotation = Quaternion.Euler (0, 0, 90);
+			isContinue = true;
+			HealthBar.life--;
+			cur_health = 10;
 		}
+
 		if (life == 0) {
 			Transform character = gameObject.GetComponent<Transform>();
 			character.rotation = Quaternion.Euler (0, 0, 90);
-			i++;
-			if (i > 50) {
-				isDead = true;
-			}
+			isDead = true;
+			isContinue = false;
 		}
-
-
 	}
-
 	void OnGUI()
 	{
 		if (isDead) {
@@ -52,12 +55,18 @@ public class HealthBar : MonoBehaviour
 		} else {
 			deadMenu.SetActive (false);
 		}
+		if (isContinue) {
+			continueMenu.SetActive (true);
+		} else {
+			continueMenu.SetActive (false);
+		}
+
 	}
 
 
 	void OnCollisionEnter2D(Collision2D collision)
 	{
-		
+
 		if (collision.gameObject.tag == "rabbit") {
 			if (cur_health > 0) {
 				cur_health -= 1;
@@ -70,8 +79,36 @@ public class HealthBar : MonoBehaviour
 				cur_health -= 5;
 				UpdateHealthBar (cur_health);
 			}
-				
+
 		}
+		if (collision.gameObject.tag == "duck") 
+		{
+			if (cur_health > 0) {
+				cur_health -= 1;
+				UpdateHealthBar (cur_health);
+			}
+
+		}
+	}
+
+	void OnTriggerEnter2D(Collider2D coll) 
+	{
+		if (coll.tag == "Water") 
+		{
+			StartCoroutine (SomeCoroutine (2F)); //timer
+		}
+
+	}
+	public IEnumerator SomeCoroutine(float waitTime) //timer
+	{
+		Transform character = gameObject.GetComponent<Transform> ();
+		character.rotation = Quaternion.Euler (0, 0, 90);
+		gameObject.GetComponent<PlayerControllerV3> ().enabled = false;
+
+		yield return new WaitForSeconds (waitTime);
+		cur_health -= cur_health;
+		UpdateHealthBar (cur_health);
+
 	}
 
 
@@ -82,5 +119,5 @@ public class HealthBar : MonoBehaviour
 		TailleBar.sizeDelta = new Vector2 (390 * Bar.fillAmount, 25);
 
 	}
-			
+
 } 

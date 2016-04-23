@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class PauseMenu : MonoBehaviour {
 
@@ -20,10 +22,9 @@ public class PauseMenu : MonoBehaviour {
 		}
 
 
-		if (isPause || HealthBar.isDead)
+		if (isPause || HealthBar.isDead || HealthBar.isContinue)
 		{
 			Time.timeScale = 0;
-            Debug.Log("tibo");
 		}else{
 			Time.timeScale = 1;
 		}
@@ -45,5 +46,10 @@ public class PauseMenu : MonoBehaviour {
 	{
 		isPause = false;
 	}
+
+	public void Exit()
+	{
+		SceneManager.LoadScene ("Menu");
+	}
+
 }
-	

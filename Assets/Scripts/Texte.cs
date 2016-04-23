@@ -1,15 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class Texte : MonoBehaviour {
     int n = 0;
-    string message;
     Text texte;
     // Use this for initialization
     void Start() {
-        texte = GetComponent<Text>();
-        message = texte.text;
+		texte = GetComponent<Text>();
+		//     string message; et message = texte.text;
     }
 
     void Update()
@@ -41,7 +42,7 @@ public class Texte : MonoBehaviour {
                     texte.fontSize = 45;
                     break;
                 case 8:
-                    Application.LoadLevel("level1");
+					SceneManager.LoadScene ("Level1");
                     break;
             }
     }

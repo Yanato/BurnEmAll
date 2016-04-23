@@ -78,3 +78,19 @@
 21/04/2016 V1.1.5 - Mickael : - Systeme de nombre de vie (x3) en plus de la santé
 			      - Débug du menu pause
                               - Incorportation d'un "checkpoint", prochainement le systeme qui va avec. 
+
+22/04/2016 V1.1.6 - Mickael : - Konami code pour avoir acces au "devil menu"
+			      - Suppression des différents menus en JS
+			      - Débug des problèmes de chargements lorsque le joueur mourrait
+			      - suppression de certaines variables innutiles et amélioration de certains scripts
+		    	      - Fin de l'IA de l'oiseau, lance des oeufs, explosions, dégats
+			      - Travail sur l'eau presque fini
+			      - découverte de comment utiliser la fonction ajoutant un temps (sleep)
+
+23/04/2016 V1.1.7 - Mickael : - Mort dans l'eau fini
+                      et      - Menu "continue" et menu mort différent
+                    Thibault  - Checkpoint pour le "continue" - bruler pour activer - fonctionne correctement
+                              - Les ennemies ne sont pas activés tant que le personnage n'a pas bougé au spawn
+                              - changement de systeme lorsque qu'il reste des vies au personnage (il n'est pas mort) donc le niveau n'est pas reset
+                              - Modification dans les menues (exit du jeu renvoie au menu principale et continue à l'endroit ou le joueur était rendue.
+
