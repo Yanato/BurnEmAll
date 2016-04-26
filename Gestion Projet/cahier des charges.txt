@@ -1,17 +1,19 @@
-Semaine -1 : Début du projet, mise en accord du thème du jeu, du type du jeu. 
+Semaine -1 : DÃ©but du projet, mise en accord du thÃ¨me du jeu, du type du jeu. 
 
-Semaine 0 : On a présenté notre projet au professeur, il a donné son approbation sur le projet mais nous a mis en garde
+Semaine 0 : On a prÃ©sentÃ© notre projet au professeur, il a donnÃ© son approbation sur le projet mais nous a mis en garde
 sur le temps restant.
-On se répartit donc les tâches pour gagner en efficacité  significativement.
-Répartition des différentes taches :
-Différents algorithmes et assets (dessins)
+On se rÃ©partit donc les tÃ¢ches pour gagner en efficacitÃ©  significativement.
+RÃ©partition des diffÃ©rentes taches :
+DiffÃ©rents algorithmes et assets (dessins)
 
-Semaine 1 : Impossible de télécharger unity sur les postes du lycée, une des solutions qui nous a été proposé
-est d'apporter un ordinateur personnel portable. On a tout de même continuer graphiquement( on a trouvé des assets intéressant
-pour notre jeu). Le professeur nous a mis en garde sur le temps restant pour réaliser le projet, sachant que
+Semaine 1 : Impossible de tÃ©lÃ©charger unity sur les postes du lycÃ©e, une des solutions qui nous a Ã©tÃ© proposÃ©
+est d'apporter un ordinateur personnel portable. On a tout de mÃªme continuer graphiquement( on a trouvÃ© des assets intÃ©ressant
+pour notre jeu). Le professeur nous a mis en garde sur le temps restant pour rÃ©aliser le projet, sachant que
 l'on n'a pas pu avancer durant les 2h de ISN (niveau codage) et de changer de projet si vraiment le temps manquerait.
-On souhaite tout de même garder le projet en prenant compte du temps restant.
+On souhaite tout de mÃªme garder le projet en prenant compte du temps restant.
 
-Semaine 2: On a bien avancé, les bases ont été réalisé(déplacement du joueur,décor,menu partiel, plateforme).
-On peut maintenant se répartir les tâches de façon plus efficace et se tenir à jour sur l'avancement du projet sur Github.
+Semaine 2: On a bien avancÃ©, les bases ont Ã©tÃ© rÃ©alisÃ©(dÃ©placement du joueur,dÃ©cor,menu partiel, plateforme).
+On peut maintenant se rÃ©partir les tÃ¢ches de faÃ§on plus efficace et se tenir Ã  jour sur l'avancement du projet sur Github.
+
+Semaine 3: N'ayant qu'une heure d'ISN et Antoine n'Ã©tant pas la, nous n'avons pas beaucoup avancÃ©. Nous avons seulement fait des recherches sur le Site web accompagnant le projet et fait des recherches sur les choses que nous devons ajouter Ã  notre projet Unity. Pour ce qui est de l'avancement du projet hors cours d'ISN, voir "ChangeLog"
 
