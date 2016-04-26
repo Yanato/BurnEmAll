@@ -13,7 +13,7 @@ ___
 - GUI :
 menu de lancement avec crédits 
 credit = musique "je code avec le cul"
-faire quelque chose pour changer les touches dans les options
+remplacer button option par "Website"
 ___
 level design
 ___
