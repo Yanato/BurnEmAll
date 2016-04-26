@@ -1,17 +1,17 @@
-‡ faire pour finir le principale du jeu (par prioritÈ):
+√† faire pour finir le principale du jeu (par priorit√©):
 
-- Monstres : Faire IA ours avec dÈgats
-- Bug lorsqu'on quitte vers le menu et que on relance (doit reset tout : probleme :fait comme un continue)
+- Monstres : Faire IA ours avec d√©gats
+- Bug lorsqu'on quitte vers le menu et que on relance (doit reset tout : probleme :fait comme un continue) revoire le unload
 - Ajout des sons
 
 
 - Fin de projet :
 ___
-LIMITE LE FEU ou doser ces dÈgats
-DÈbut d'histoire : script texte, possibilitÈs ?
+LIMITE LE FEU ou doser ces d√©gats
+D√©but d'histoire : script texte, possibilit√©s ?
 ___
 - GUI :
-menu de lancement avec crÈdits 
+menu de lancement avec cr√©dits 
 credit = musique "je code avec le cul"
 faire quelque chose pour changer les touches dans les options
 ___
@@ -19,9 +19,9 @@ level design
 ___
 
 - Parallele (pas les barres) :
-rÈalisation du site web (‡ faire en heure d'ISN)
+r√©alisation du site web (√† faire en heure d'ISN)
 
 
 NOTE AUX DEVELOPPEURS :
 
-Nothing
+d√©veloppez(couch√©)
