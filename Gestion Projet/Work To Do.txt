@@ -3,7 +3,7 @@
 - Monstres : Faire IA ours avec dégats
 - Bug lorsqu'on quitte vers le menu et que on relance (doit reset tout : probleme :fait comme un continue) revoire le unload
 - Ajout des sons
-
+- script disparition canard
 
 - Fin de projet :
 ___
