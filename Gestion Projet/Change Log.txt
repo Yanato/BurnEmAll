@@ -94,3 +94,6 @@
                               - changement de systeme lorsque qu'il reste des vies au personnage (il n'est pas mort) donc le niveau n'est pas reset
                               - Modification dans les menues (exit du jeu renvoie au menu principale et continue à l'endroit ou le joueur était rendue.
 
+26/04/2016 V1.1.8 - Mickael : - Boutton start qui reset bien tout le jeu comme il faut
+                              - Boutton continue ne pouvant etre activé si il n'y a en théorie aucun niveau a charger.
+			      - découverte de bugs sur les checkpoints (ne fonctionne que une fois et ne charge pas le décor derriere.)

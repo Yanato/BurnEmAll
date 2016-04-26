@@ -17,5 +17,7 @@ public class deadMenu : MonoBehaviour {
 	}
 	public void Exit (){
 		SceneManager.LoadScene ("Menu");
+		HealthBar.isDead = false;
+		MainMenu.DisableContinue = true;
 	}
 }

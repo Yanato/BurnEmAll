@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour {
 
-	public bool isPause = false;
+	public static bool isPause = false;
 	public GameObject menu;
 
 	void start ()
@@ -50,6 +50,7 @@ public class PauseMenu : MonoBehaviour {
 	public void Exit()
 	{
 		SceneManager.LoadScene ("Menu");
+		isPause = false;
 	}
 
 }

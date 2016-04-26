@@ -7,7 +7,7 @@ public class continueMenu : MonoBehaviour {
 
 	public GameObject Camera;
 	public GameObject Player;
-	Vector3 CheckpointPosition;
+	public static Vector3 CheckpointPosition;
 
 	void Update(){
 		if (Checkpoint.takePos == true) {
@@ -43,6 +43,6 @@ public class continueMenu : MonoBehaviour {
 
 	public void Exit (){
 		SceneManager.LoadScene ("Menu");
-
+		HealthBar.isContinue = false;
 	}
 }
