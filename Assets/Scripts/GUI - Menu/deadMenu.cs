@@ -13,11 +13,15 @@ public class deadMenu : MonoBehaviour {
 		HealthBar.cur_health = 10;
 		HealthBar.life = 3;
 		SceneManager.LoadScene ("Level1");
+		Checkpoint.check = false;
+
 
 	}
 	public void Exit (){
 		SceneManager.LoadScene ("Menu");
 		HealthBar.isDead = false;
 		MainMenu.DisableContinue = true;
+		Checkpoint.check = false;
+
 	}
 }

@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour {
 
 	public static bool DisableContinue = true;
 	public Transform continuelife;
+	public static bool checkpointe=false;
 	// Use this for initializationj
 
 	void Start (){
@@ -34,6 +35,8 @@ public class MainMenu : MonoBehaviour {
 	public void Continue(){
 		
 		SceneManager.LoadScene ("Level1");
+		HealthBar.cur_health = 10;
+		checkpointe = true;
 	}
 
 

@@ -97,3 +97,8 @@
 26/04/2016 V1.1.8 - Mickael : - Boutton start qui reset bien tout le jeu comme il faut
                               - Boutton continue ne pouvant etre activé si il n'y a en théorie aucun niveau a charger.
 			      - découverte de bugs sur les checkpoints (ne fonctionne que une fois et ne charge pas le décor derriere.)
+27/04/2016 V1.1.9 - Groupe  : - Ajout disparition canard si il n'est pas mort
+                              - Debug du checkpoint (image de fond bien présente et fonctionne bien jusuqu'a la mort du personnage)
+			      - checkpoint et boutton continue sans aucun bug a priori
+                              - re débug de l'eau 
+                              - Avancement sur l'histoire d'introduction (scene de texte)

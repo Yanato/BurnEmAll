@@ -1,12 +1,7 @@
 ﻿à faire pour finir le principale du jeu (par priorité):
 
 - Monstres : Faire IA ours avec dégats
-
-- start qui restart bien le jeu, mais continue toujours pas bien fonctionelle. Necessite d'etre revu. Checkpoint ayant les bugs suivant : 
-décor arriere qui disparait d'un checkpoint a l'autre et checkpoint qui fonctionne que une seul fois
-
 - Ajout des sons
-- script disparition canard
 
 - Fin de projet :
 ___

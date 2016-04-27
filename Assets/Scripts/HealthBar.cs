@@ -96,6 +96,8 @@ public class HealthBar : MonoBehaviour
 		if (coll.tag == "Water") 
 		{
 			StartCoroutine (SomeCoroutine (2F)); //timer
+			cur_health -= cur_health;
+			UpdateHealthBar (cur_health);
 		}
 
 	}
@@ -106,8 +108,7 @@ public class HealthBar : MonoBehaviour
 		gameObject.GetComponent<PlayerControllerV3> ().enabled = false;
 
 		yield return new WaitForSeconds (waitTime);
-		cur_health -= cur_health;
-		UpdateHealthBar (cur_health);
+
 
 	}
 
