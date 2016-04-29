@@ -8,15 +8,11 @@ public class FlowerAI : MonoBehaviour {
 	public float moveSpeed;
 	public float jumpHeight;
 
-	public GameObject decore;
-	private Transform decor;
-
 	GameObject Explosion;
 
 	void Start() 
 	{
 		Explosion = Resources.Load("explosion flamme") as GameObject;
-		decor = decore.transform;
 	}
 
 	void Update () {
@@ -49,7 +45,7 @@ public class FlowerAI : MonoBehaviour {
 		if (coll.gameObject.name == "Player") 
 		{
 			GameObject boom = Instantiate (Explosion) as GameObject;
-			boom.transform.position = decor.transform.position;
+			boom.transform.position = gameObject.transform.position;
 			Destroy(gameObject);
 
 		}

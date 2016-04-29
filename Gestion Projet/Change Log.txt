@@ -102,3 +102,9 @@
 			      - checkpoint et boutton continue sans aucun bug a priori
                               - re débug de l'eau 
                               - Avancement sur l'histoire d'introduction (scene de texte)
+
+29/04/2016 V1.1.10 - Mickael: - Ajout de l'histoire d'introduction au bouton start, ne s'affiche qu'une fois.
+			      - Debut de recherche sur la façon de gérer les sons, reste à enregistrer
+			      - Ajout de la musique du jeu. (réalisé par un ami)
+
+30/04/2016 V1.2.1 - Mickael : - L'IA de tout les ennemies est enfin fini. 

@@ -55,14 +55,14 @@ public class PlayerControllerV3 : MonoBehaviour {
 
 			if (Input.GetKeyDown (KeyCode.UpArrow) && grounded) {
 				disableEnnemy = false;
-				jumpHeight = 15;
+				jumpHeight = 25;
 				Jump ();
 			}
 
 			if (Input.GetKeyDown (KeyCode.UpArrow) && !doubleJumped && !grounded) {
 				jumpHeight = 9;
 				Jump ();
-				doubleJumped = false;
+				doubleJumped = true;
 			}
 
 			if (Input.GetKey (KeyCode.LeftArrow)) 

@@ -1,21 +1,23 @@
 ﻿à faire pour finir le principale du jeu (par priorité):
 
-- Monstres : Faire IA ours avec dégats
-- Ajout des sons
 
-- Fin de projet :
-___
-LIMITE LE FEU ou doser ces dégats
-Début d'histoire : script texte, possibilités ?
-___
-- GUI :
-menu de lancement avec crédits 
-credit = musique "je code avec le cul"
+- Ajout de sons (à enregistrer) SoundEffectsHelper.Instance.lebonson();
+
+- Menu (Crédits et fausses options) :
 remplacer button option par ya pas d'options +  "Website" + je code avec le cul
-___
-level design
-___
+credit = bonhomme deplacement affichage 
 
+- BOUCLAGE DE PROJET : 
+phase de vérification - débug
+doser hp et dégats feu
+level design
+
+Autre : Export Android ?
+
+
+
+
+___
 - Parallele (pas les barres) :
 réalisation du site web (à faire en heure d'ISN)
 

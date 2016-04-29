@@ -17,6 +17,7 @@ public class HealthV3 : MonoBehaviour
 	public GameObject decore;
 	private Transform decor;
 
+	public float damage = 1;
 
 
 	private float r = 1;
@@ -31,10 +32,9 @@ public class HealthV3 : MonoBehaviour
 
 	void OnCollisionEnter2D(Collision2D collider)
 	{
-		Disparation bullet = collider.gameObject.GetComponent<Disparation>();
 		if (collider.gameObject.name == "bullet(Clone)")
 		{
-			cur_health -= bullet.damage;
+			cur_health -= damage;
 			UpdateHealthBar (cur_health);
 		}
 

@@ -89,6 +89,14 @@ public class HealthBar : MonoBehaviour
 			}
 
 		}
+		if (collision.gameObject.tag == "Bear") 
+		{
+			if (cur_health > 0) {
+				cur_health -= 1;
+				UpdateHealthBar (cur_health);
+			}
+
+		}
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) 
