@@ -66,6 +66,8 @@ public class BearAI : MonoBehaviour {
 				GetComponent<Rigidbody2D> ().velocity = new Vector2 (-moveSpeed, GetComponent<Rigidbody2D> ().velocity.y);
 			}else {
 				shoota = true;
+				SoundEffectsHelper.Instance.DoBearSoundCac();
+
 			}
 		}
 
@@ -75,6 +77,8 @@ public class BearAI : MonoBehaviour {
 				GetComponent<Rigidbody2D> ().velocity = new Vector2 (moveSpeed, GetComponent<Rigidbody2D> ().velocity.y);
 			}else {
 				shootb = true;
+				SoundEffectsHelper.Instance.DoBearSoundCac();
+
 			}
 		}
 
@@ -85,7 +89,6 @@ public class BearAI : MonoBehaviour {
 			bullet.transform.position = new Vector3 (gameObject.transform.position.x -1.5f,gameObject.transform.position.y +1,0);             // C'est pour que la torche part de la main et non au milieu
 				Rigidbody2D rb = bullet.GetComponent<Rigidbody2D> (); 
 				rb.velocity = (dir * amount);
-			SoundEffectsHelper.Instance.DoBearSoundCac();
 			shootb = false;
 			goBackb = false;
 			bearCacSound = true;
@@ -98,7 +101,6 @@ public class BearAI : MonoBehaviour {
 			bullet.transform.position = new Vector3 (gameObject.transform.position.x +1.5f,gameObject.transform.position.y +1,0);             // C'est pour que la torche part de la main et non au milieu
 			Rigidbody2D rb = bullet.GetComponent<Rigidbody2D> ();
 			rb.velocity = (dir * amount); 
-			SoundEffectsHelper.Instance.DoBearSoundCac();
 			shoota = false;
 			goBacka = false;
 			bearCacSound = true;

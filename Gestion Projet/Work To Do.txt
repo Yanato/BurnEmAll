@@ -1,15 +1,13 @@
 ﻿à faire pour finir le principale du jeu (par priorité):
 
 
-- Ajout de sons (à enregistrer) SoundEffectsHelper.Instance.lebonson();
-lapin 
-son dégat personnages
+- Ajout de sons suivants SoundEffectsHelper.Instance.lebonson(); :
 
-+ voix burn em all
-son pour intro
+son dégats infligé au personnage
+voix burn em all pour l'intro
+musique pour intro
+musique pour le menu d'acueil
 
-- Menu (Crédits et fausses options) :
-credit = bonhomme deplacement affichage 
 
 
 

@@ -107,4 +107,8 @@
 			      - Debut de recherche sur la façon de gérer les sons, reste à enregistrer
 			      - Ajout de la musique du jeu. (réalisé par un ami)
 
-30/04/2016 V1.2.1 - Mickael : - L'IA de tout les ennemies est enfin fini. 
+30/04/2016 V1.2.1 - Groupe:   - L'IA de tout les ennemies est enfin fini. 
+                              - Ajout de la plupart des sons
+                              - Ajout d'un script qui freeze la position des ennemies tant qu'il ne sont pas à une certaine distance du personnage
+                              - Ajout du menu Option
+                              - Ajout du menu Credit avec déplacement du personnage qui fait office de voire les différents crédits.
