@@ -35,6 +35,7 @@ public class HealthBar : MonoBehaviour
 		if (cur_health == 0) {
 			Transform character = gameObject.GetComponent<Transform>();
 			character.rotation = Quaternion.Euler (0, 0, 90);
+			SoundEffectsHelper.Instance.DoDeathSound();
 			isContinue = true;
 			HealthBar.life--;
 			cur_health = 10;
@@ -43,6 +44,7 @@ public class HealthBar : MonoBehaviour
 		if (life == 0) {
 			Transform character = gameObject.GetComponent<Transform>();
 			character.rotation = Quaternion.Euler (0, 0, 90);
+
 			isDead = true;
 			isContinue = false;
 		}
@@ -78,6 +80,8 @@ public class HealthBar : MonoBehaviour
 			if (cur_health > 0) {
 				cur_health -= 5;
 				UpdateHealthBar (cur_health);
+				SoundEffectsHelper.Instance.DoFlowerSoundExplosion();
+
 			}
 
 		}
@@ -86,6 +90,8 @@ public class HealthBar : MonoBehaviour
 			if (cur_health > 0) {
 				cur_health -= 1;
 				UpdateHealthBar (cur_health);
+				SoundEffectsHelper.Instance.DoDuckSound2();
+
 			}
 
 		}

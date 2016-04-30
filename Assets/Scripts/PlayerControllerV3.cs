@@ -55,7 +55,7 @@ public class PlayerControllerV3 : MonoBehaviour {
 
 			if (Input.GetKeyDown (KeyCode.UpArrow) && grounded) {
 				disableEnnemy = false;
-				jumpHeight = 25;
+				jumpHeight = 15;
 				Jump ();
 			}
 

@@ -15,11 +15,14 @@ public class BearAI : MonoBehaviour {
 	public bool shoota = false;
 	public bool shootb = false;
 
+	public bool bearCacSound; 
+
 	private int amount = 2; 
 	GameObject BulletTrailPrefab;
 
 	void Start () {
 		BulletTrailPrefab = Resources.Load("magicarpe2") as GameObject;
+		bearCacSound = true; 
 
 	}
 	
@@ -29,7 +32,6 @@ public class BearAI : MonoBehaviour {
 		Vector3 ppos = (player.transform.position);
 		Vector2 Sens = new Vector2(ppos.x - epos.x, ppos.y - epos.y).normalized;
 		var xpos = (ppos.x - epos.x);
-		Debug.Log (xpos);
 
 		if(Sens.x > 0) 
 		{
@@ -38,6 +40,10 @@ public class BearAI : MonoBehaviour {
 				GetComponent<Rigidbody2D> ().velocity = new Vector2 (moveSpeed, GetComponent<Rigidbody2D> ().velocity.y);
 			} else {
 				goBacka = true;
+				if (bearCacSound == true) {
+					SoundEffectsHelper.Instance.DoBearSound ();
+					bearCacSound = false;
+				}
 			}
 		}
 		else 
@@ -47,6 +53,10 @@ public class BearAI : MonoBehaviour {
 				GetComponent<Rigidbody2D> ().velocity = new Vector2 (-moveSpeed, GetComponent<Rigidbody2D> ().velocity.y);
 			}else {
 				goBackb = true;
+				if (bearCacSound == true) {
+					SoundEffectsHelper.Instance.DoBearSound ();
+					bearCacSound = false;
+				}
 			}
 		}
 
@@ -73,20 +83,27 @@ public class BearAI : MonoBehaviour {
 				GameObject bullet = Instantiate (BulletTrailPrefab) as GameObject;
 			Vector3 dir = new Vector3 (-5,-1,0);
 			bullet.transform.position = new Vector3 (gameObject.transform.position.x -1.5f,gameObject.transform.position.y +1,0);             // C'est pour que la torche part de la main et non au milieu
-				Rigidbody2D rb = bullet.GetComponent<Rigidbody2D> ();        // C'est ça qui va permettre à la torche de voler 
-				rb.velocity = (dir * amount);                               //il tire maintenant selon la pos de la souris
+				Rigidbody2D rb = bullet.GetComponent<Rigidbody2D> (); 
+				rb.velocity = (dir * amount);
+			SoundEffectsHelper.Instance.DoBearSoundCac();
 			shootb = false;
 			goBackb = false;
+			bearCacSound = true;
+
 		}
 		if (shoota == true) {
 			gameObject.transform.localScale = new Vector3 (-1, 1, 1);
 			GameObject bullet = Instantiate (BulletTrailPrefab) as GameObject;
 			Vector3 dir = new Vector3 (5,1,0);
 			bullet.transform.position = new Vector3 (gameObject.transform.position.x +1.5f,gameObject.transform.position.y +1,0);             // C'est pour que la torche part de la main et non au milieu
-			Rigidbody2D rb = bullet.GetComponent<Rigidbody2D> ();        // C'est ça qui va permettre à la torche de voler 
-			rb.velocity = (dir * amount);                               //il tire maintenant selon la pos de la souris
+			Rigidbody2D rb = bullet.GetComponent<Rigidbody2D> ();
+			rb.velocity = (dir * amount); 
+			SoundEffectsHelper.Instance.DoBearSoundCac();
 			shoota = false;
 			goBacka = false;
+			bearCacSound = true;
+
+
 		}
 	}
 

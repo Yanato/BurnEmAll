@@ -2,10 +2,16 @@
 
 
 - Ajout de sons (à enregistrer) SoundEffectsHelper.Instance.lebonson();
+lapin 
+son dégat personnages
+
++ voix burn em all
+son pour intro
 
 - Menu (Crédits et fausses options) :
-remplacer button option par ya pas d'options +  "Website" + je code avec le cul
 credit = bonhomme deplacement affichage 
+
+
 
 - BOUCLAGE DE PROJET : 
 phase de vérification - débug

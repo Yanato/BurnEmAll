@@ -11,6 +11,8 @@ public class MainMenu : MonoBehaviour {
 
 	public static bool isIntro = true;
 
+	public GameObject options;
+	public GameObject mainmenu;
 	// Use this for initializationj
 
 	void Start (){
@@ -55,6 +57,8 @@ public class MainMenu : MonoBehaviour {
 	}
 
 	public void Option(){
+		options.SetActive(true);
+		mainmenu.SetActive(false);
 	}
 
 	public void Exit (){

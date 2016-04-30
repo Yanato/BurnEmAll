@@ -13,9 +13,13 @@ public class SoundEffectsHelper : MonoBehaviour
 	public static SoundEffectsHelper Instance;
 
 	public AudioClip DuckSound;
+	public AudioClip DuckSound2;
+
 	public AudioClip FlowerSound;
+	public AudioClip FlowerSoundExplosion;
 	public AudioClip BearSound;
-	public AudioClip RabbitSound;
+	public AudioClip BearSoundCac;
+	public AudioClip DeathSound;
 
 
 	void Awake()
@@ -30,6 +34,12 @@ public class SoundEffectsHelper : MonoBehaviour
 	public void DoDuckSound()
 	{
 		MakeSound(DuckSound);
+
+	}
+
+	public void DoDuckSound2()
+	{
+		MakeSound(DuckSound2);
 	}
 
 	public void DoFlowerSound()
@@ -37,13 +47,23 @@ public class SoundEffectsHelper : MonoBehaviour
 		MakeSound(FlowerSound);
 	}
 
+	public void DoFlowerSoundExplosion()
+	{
+		MakeSound(FlowerSoundExplosion);
+	}
+
 	public void DoBearSound()
 	{
 		MakeSound(BearSound);
 	}
-	public void DoRabbitSound()
+
+	public void DoBearSoundCac()
 	{
-		MakeSound(RabbitSound);
+		MakeSound(BearSoundCac);
+	}
+	public void DoDeathSound()
+	{
+		MakeSound(DeathSound);
 	}
 
 	/// <summary>

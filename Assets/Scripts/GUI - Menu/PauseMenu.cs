@@ -9,6 +9,12 @@ public class PauseMenu : MonoBehaviour {
 	public static bool isPause = false;
 	public GameObject menu;
 
+	public GameObject options;
+	public GameObject level;
+	public GameObject healthbar;
+	public GameObject health;
+	public GameObject pause;
+
 	void start ()
 	{
 		menu.SetActive(false);
@@ -52,5 +58,25 @@ public class PauseMenu : MonoBehaviour {
 		SceneManager.LoadScene ("Menu");
 		isPause = false;
 	}
+	public void Options()
+	{
+		options.SetActive(true);
+		pause.SetActive(false);
+		level.SetActive(false);
+		health.SetActive(false);	
+		healthbar.SetActive(false);
 
+	}
+	public void Return()
+	{
+		options.SetActive(false);
+		pause.SetActive(true);
+		level.SetActive(true);
+		health.SetActive(true);	
+		healthbar.SetActive(true);
+	}
+	public void Website(){
+
+		Application.OpenURL ("http://yanato.github.io/project/");
+	}
 }

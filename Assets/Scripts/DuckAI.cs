@@ -9,6 +9,13 @@ public class DuckAI : MonoBehaviour
 	public int speed = 5;
 	public Vector2 direction = new Vector2(1, 0);
 	GameObject egg;
+	public bool duckSound;
+
+
+	void Start(){
+
+		duckSound = true;
+	}
 
 	void Update(){
 		egg = Resources.Load("eggs duck") as GameObject;
@@ -22,6 +29,10 @@ public class DuckAI : MonoBehaviour
 		if ((canard.x - ppos.x) < 0.3 && (canard.x - ppos.x) > 0){
 			GameObject oeuf = Instantiate(egg) as GameObject;
 			oeuf.transform.position = transform.position - new Vector3 (0,1,0);
+				if (duckSound == true) {
+				SoundEffectsHelper.Instance.DoDuckSound ();
+					duckSound = false;
+			}
 		}
 		if (ppos.x - canard.x > 2) {        // Chiffre random mais comme ça on est sur qu'il est parti.
 			Disparation();
