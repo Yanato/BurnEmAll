@@ -2,10 +2,12 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class HealthV3 : MonoBehaviour
+public class HealthV4 : MonoBehaviour
 {
+    public float dropRate = 0.25f;
 	public float ashes = 0.01f;
 	GameObject Smoke;
+	GameObject hearth;
 
 	public Image Background;
 	public Image Bar;	
@@ -13,7 +15,6 @@ public class HealthV3 : MonoBehaviour
 
 	public float max_health = 10f;
 	public float cur_health = 10f;	
-
 
 
 	public float damage = 1;
@@ -25,6 +26,7 @@ public class HealthV3 : MonoBehaviour
 
 	void Start() 
 	{
+        hearth = Resources.Load("gasoline") as GameObject;
 		Smoke = Resources.Load("WhiteSmoke") as GameObject;
 	}
 
@@ -61,6 +63,11 @@ public class HealthV3 : MonoBehaviour
 		if (cur_health <= 0)
 		{
 			Destroy(gameObject);
+            float drop = Random.Range(0, 1);
+                if (drop <= dropRate) {
+				GameObject poke = Instantiate(hearth) as GameObject;
+                poke.transform.position = transform.position;
+            }
 		}
 	}
 	public void UpdateHealthBar ( float cur_health)

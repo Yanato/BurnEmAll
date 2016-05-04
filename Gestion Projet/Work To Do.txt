@@ -2,7 +2,6 @@
 
 
 - Ajout de sons suivants SoundEffectsHelper.Instance.lebonson(); :
-
 son dégats infligé au personnage
 voix burn em all pour l'intro
 musique pour intro

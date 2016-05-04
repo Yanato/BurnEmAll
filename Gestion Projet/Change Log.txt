@@ -112,3 +112,6 @@
                               - Ajout d'un script qui freeze la position des ennemies tant qu'il ne sont pas à une certaine distance du personnage
                               - Ajout du menu Option
                               - Ajout du menu Credit avec déplacement du personnage qui fait office de voire les différents crédits.
+04/05/2016 V1.2.2 - Antoine:  - Ajout de drop de régen de vie aléatoirement sur les monstres.
+                     et       - Ajout d'un géricane d'essence en guise d'item régen de vie
+                    Mickael:  - Modification du script de regen de vie d'antoine pour faire en sorte que les géricane puisse tomber (gravité) mais ne traversent pas le sol.
