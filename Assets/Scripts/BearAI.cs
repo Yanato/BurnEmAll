@@ -16,6 +16,7 @@ public class BearAI : MonoBehaviour {
 	public bool shootb = false;
 
 	public bool bearCacSound; 
+	public bool playerHited = false;
 
 	private int amount = 2; 
 	GameObject BulletTrailPrefab;
@@ -25,7 +26,15 @@ public class BearAI : MonoBehaviour {
 		bearCacSound = true; 
 
 	}
-	
+	void OnCollisionEnter2D(Collision2D collider)
+	{
+		if (collider.gameObject.name == "Player")
+		{
+			playerHited = true;
+		}
+	}
+
+
 	void Update () {
 		var epos = gameObject.transform.position;
 		var player = GameObject.Find("Player");
@@ -36,9 +45,10 @@ public class BearAI : MonoBehaviour {
 		if(Sens.x > 0) 
 		{
 			gameObject.transform.localScale = new Vector3(-1, 1, 1);
-			if (xpos > 1.6) {
+			if (playerHited == false) {
 				GetComponent<Rigidbody2D> ().velocity = new Vector2 (moveSpeed, GetComponent<Rigidbody2D> ().velocity.y);
 			} else {
+				playerHited = false;
 				goBacka = true;
 				if (bearCacSound == true) {
 					SoundEffectsHelper.Instance.DoBearSound ();
@@ -49,9 +59,10 @@ public class BearAI : MonoBehaviour {
 		else 
 		{
 			gameObject.transform.localScale = new Vector3(1, 1, 1);
-			if (xpos < -1.6) {
+			if (playerHited == false) {
 				GetComponent<Rigidbody2D> ().velocity = new Vector2 (-moveSpeed, GetComponent<Rigidbody2D> ().velocity.y);
 			}else {
+				playerHited = false;
 				goBackb = true;
 				if (bearCacSound == true) {
 					SoundEffectsHelper.Instance.DoBearSound ();

@@ -15,11 +15,17 @@ public class SoundEffectsHelper : MonoBehaviour
 	public AudioClip DuckSound;
 	public AudioClip DuckSound2;
 
-	public AudioClip FlowerSound;
 	public AudioClip FlowerSoundExplosion;
 	public AudioClip BearSound;
 	public AudioClip BearSoundCac;
 	public AudioClip DeathSound;
+
+	public AudioClip degat1;
+	public AudioClip degat2;
+	public AudioClip degat3;
+	public AudioClip degat4;
+	public AudioClip degat5;
+	public AudioClip degat6;
 
 
 	void Awake()
@@ -41,11 +47,7 @@ public class SoundEffectsHelper : MonoBehaviour
 	{
 		MakeSound(DuckSound2);
 	}
-
-	public void DoFlowerSound()
-	{
-		MakeSound(FlowerSound);
-	}
+		
 
 	public void DoFlowerSoundExplosion()
 	{
@@ -65,6 +67,33 @@ public class SoundEffectsHelper : MonoBehaviour
 	{
 		MakeSound(DeathSound);
 	}
+
+
+	public void DoDegat1Sound()
+	{
+		MakeSound (degat1);
+	}
+	public void DoDegat2Sound()
+	{
+		MakeSound (degat2);
+	}
+	public void DoDegat3Sound()
+	{
+		MakeSound (degat3);
+	}
+	public void DoDegat4Sound()
+	{
+		MakeSound (degat4);
+	}
+	public void DoDegat5Sound()
+	{
+		MakeSound (degat5);
+	}	public void DoDegat6Sound()
+	{
+		MakeSound (degat6);
+	}
+
+
 
 	/// <summary>
 	/// Lance la lecture du son
