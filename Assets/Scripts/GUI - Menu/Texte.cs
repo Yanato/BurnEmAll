@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class Texte : MonoBehaviour {
     int n = 0;
+	public AudioClip Burnem;
+
     Text texte;
     // Use this for initialization
     void Start() {
@@ -34,8 +36,9 @@ public class Texte : MonoBehaviour {
 			    case 7:
 				    texte.text = "Il avait sombré dans la folie ! \n Mais ne l'était-il pas déjà avant ? \n \n Tout ce qu'il savait,\n c'est que la réponse se tennait entre ses mains. ";
 				    break;
-			    case 8:
+			case 8:
 				texte.text = "Il comprit vite que le feu était\n l'unique solution à tout ces problèmes.\n \n Toutes les voix se mirent à chuchoter, murmurer,\n parler, crier, hurler la même chose... ";
+				burnemSound ();
 				    break;			
                  case 9:
 				    texte.text = "BURM'EM ALL.";
@@ -51,4 +54,12 @@ public class Texte : MonoBehaviour {
             }
     }
     }
+	public void burnemSound()
+	{
+		MakeSound (Burnem);
+	}
+	private void MakeSound(AudioClip originalClip)
+	{
+		AudioSource.PlayClipAtPoint(originalClip, transform.position);
+	}
 }
