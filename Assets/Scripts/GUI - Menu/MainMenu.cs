@@ -13,12 +13,15 @@ public class MainMenu : MonoBehaviour {
 
 	public GameObject options;
 	public GameObject mainmenu;
+	public GameObject allmenu;
 	public GameObject menuSound;
+	public GameObject credits;
 
 	// Use this for initializationj
 
 	void Start (){
 		menuSound.SetActive (true);
+		credits.SetActive (false);
 	}
 
 	// Update is called once per frame
@@ -57,8 +60,17 @@ public class MainMenu : MonoBehaviour {
 
 
 	public void Credit(){
-		SceneManager.LoadScene ("credits");
+		credits.SetActive (true);
+		allmenu.SetActive (false);
 	}
+
+	public void ReturnMenu()
+	{
+		credits.SetActive (false);
+		allmenu.SetActive (true);
+
+	}
+
 
 	public void Option(){
 		menuSound.SetActive (false);

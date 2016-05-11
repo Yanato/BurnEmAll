@@ -28,7 +28,7 @@ public class TexteCredit : MonoBehaviour {
 		}
 		if (-2 < xpos && xpos< 1) {
 			texte.text = "Sounds effect / Musics:";
-			names.text = "TOUCHAIS Mickael\nMESSE Thibault (bear sound)\n'Drorki' (duck sound)\n\nLENCOU Quentin : Overworld 8bit music\n                                Spark Ignition Madness\n                                menu\n'L'hermite moderne' (Je code avec le cul music)";
+			names.text = "TOUCHAIS Mickael\nMESSE Thibault (bear sound)\n'Drorki' (duck sound)\n\nLENCOU Quentin : Overworld\n(8bit music)             Spark Ignition Madness\n                                Prelude to rampage\nL'hermite moderne : ''Je code avec le cul''";
 
 		}
 		if (1 < xpos && xpos< 4) {
