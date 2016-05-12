@@ -6,8 +6,6 @@ public class decoreBurn2 : MonoBehaviour {
 	GameObject Fire;
 	GameObject Smoke;
 
-	public GameObject decore;
-	private Transform decor;
 
 	private float r = 1;
 	private float g = 1;
@@ -22,7 +20,6 @@ public class decoreBurn2 : MonoBehaviour {
 	{
 		Fire = Resources.Load("DecoreBurn") as GameObject;
 		Smoke = Resources.Load("WhiteSmoke") as GameObject;
-		decor = decore.transform;
 		a = GetComponent<SpriteRenderer> ().color.a;
 	}
 
@@ -31,8 +28,8 @@ public class decoreBurn2 : MonoBehaviour {
 		if (coll.tag == "bullet") 
 		{
 			GameObject Feu = Instantiate (Fire) as GameObject;         //faire un délai de temps, une limite à 1 et prendre les positions de la torche etc. = pas fini
-			Feu.transform.parent = decor;
-			Feu.transform.position = decor.transform.position;
+			Feu.transform.parent = gameObject.transform;
+			Feu.transform.position = gameObject.transform.position;
 		}
 	}
 
@@ -53,8 +50,8 @@ public class decoreBurn2 : MonoBehaviour {
 		}
 		if (r <= 0.41f && r>= 0.40f) {
 			GameObject fumee = Instantiate (Smoke) as GameObject;         //faire un délai de temps, une limite à 1 et prendre les positions de la torche etc. = pas fini
-			fumee.transform.parent = decor;
-			fumee.transform.position = decor.transform.position;
+			fumee.transform.parent = gameObject.transform;
+			fumee.transform.position = gameObject.transform.position;
 		}
 
 		if (r <= 0.15f)
