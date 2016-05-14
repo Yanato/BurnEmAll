@@ -1,15 +1,7 @@
 ﻿à faire pour finir le principale du jeu (par priorité):
 
-doser hp
-mettre les mobs
-script canard en fonction de la pos du canard
-script ours : end quand il est mort + demi tour si il touche le mur etc..
-montagne background récup pos quand checkpoint
 
-
-- BOUCLAGE DE PROJET : 
-phase de vérification - débug
-
+gerer les pdvs du perso et ceux des ennemies, remettre les canard au bon endroit + test le level.
 
 Autre : Export Android ?
 

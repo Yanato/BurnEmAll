@@ -18,6 +18,7 @@ public class HealthBar : MonoBehaviour
 	public static bool isContinue = false;
 	public GameObject deadMenu;
 	public GameObject continueMenu;
+	public static bool isKilled = false;
 
 	public bool doSound = false;
 
@@ -32,11 +33,12 @@ public class HealthBar : MonoBehaviour
 	{
 		UpdateHealthBar (cur_health);
 
-		if (cur_health == 0) {
+		if ((cur_health == 0) || isKilled ) {
 			Transform character = gameObject.GetComponent<Transform>();
 			character.rotation = Quaternion.Euler (0, 0, 90);
 			SoundEffectsHelper.Instance.DoDeathSound();
 			isContinue = true;
+			isKilled = false;
 			HealthBar.life--;
 			cur_health = 10;
 		}
@@ -79,7 +81,7 @@ public class HealthBar : MonoBehaviour
 		if (collision.gameObject.tag == "flower") 
 		{
 			if (cur_health > 0) {
-				cur_health -= 5;
+				cur_health -= 1;
 				doSound = true;
 				UpdateHealthBar (cur_health);
 				SoundEffectsHelper.Instance.DoFlowerSoundExplosion();
@@ -137,32 +139,33 @@ public class HealthBar : MonoBehaviour
 		Bar.fillAmount = cur_health / max_health;
 		TailleBar.sizeDelta = new Vector2 (390 * Bar.fillAmount, 25);
 
-		if (Bar.fillAmount == 0.9f && doSound) {
+		if ((Bar.fillAmount == 0.9f) && doSound) {
 			SoundEffectsHelper.Instance.DoDegat1Sound ();
 			doSound = false;
 		}
-		if (Bar.fillAmount == 0.7f && doSound) {
+		if ((Bar.fillAmount == 0.7f) && doSound) {
 			SoundEffectsHelper.Instance.DoDegat2Sound ();
 			doSound = false;
 		}
-		if (Bar.fillAmount == 0.5f && doSound) {
+		if ((Bar.fillAmount == 0.5f) && doSound) {
 			SoundEffectsHelper.Instance.DoDegat3Sound ();
 			doSound = false;
 		}
-		if (Bar.fillAmount == 0.4f && doSound) {
+		if ((Bar.fillAmount == 0.4f) && doSound) {
 			SoundEffectsHelper.Instance.DoDegat4Sound ();
 			doSound = false;
 		}		
-		if (Bar.fillAmount == 0.3f && doSound) {
+		if ((Bar.fillAmount == 0.3f) && doSound) {
 			SoundEffectsHelper.Instance.DoDegat5Sound ();
 			doSound = false;
 		}
-		if (Bar.fillAmount == 0.2f && doSound) {
+		if ((Bar.fillAmount == 0.2f) && doSound) {
 			SoundEffectsHelper.Instance.DoDegat6Sound ();
 			doSound = false;
 		}
-
-
+		if (Bar.fillAmount == 0f) {
+			isKilled = true;
+		}
 
 	}
 

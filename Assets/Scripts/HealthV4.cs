@@ -16,6 +16,7 @@ public class HealthV4 : MonoBehaviour
 	public float max_health = 10f;
 	public float cur_health = 10f;	
 
+	public bool isKilled = false;
 
 	public float damage = 1;
 
@@ -37,12 +38,22 @@ public class HealthV4 : MonoBehaviour
 			cur_health -= damage;
 			UpdateHealthBar (cur_health);
 		}
+	}
+	void Update()
+	{
+		if ((cur_health <= 0) || isKilled) {
+			isKilled = false;
+			Destroy (gameObject);
+			float drop = Random.Range (0f, 1f);
+			if (drop <= dropRate) {
+				GameObject poke = Instantiate (hearth) as GameObject;
+				poke.transform.position = transform.position;
+			}
 
-		if (cur_health <= 0)
-		{
-			Destroy(gameObject);
 		}
 	}
+	
+
 	void OnParticleCollision(GameObject other)
 	{
 		cur_health--;
@@ -60,20 +71,14 @@ public class HealthV4 : MonoBehaviour
 
 		GetComponent<SpriteRenderer>().color = new Color (r, g, b, 1);
 
-		if (cur_health <= 0)
-		{
-			Destroy(gameObject);
-            float drop = Random.Range(0, 1);
-                if (drop <= dropRate) {
-				GameObject poke = Instantiate(hearth) as GameObject;
-                poke.transform.position = transform.position;
-            }
-		}
+
 	}
 	public void UpdateHealthBar ( float cur_health)
 	{
 		Bar.fillAmount = cur_health / max_health;
 		BarLife.sizeDelta = new Vector2 (390 * Bar.fillAmount, 25);
-
+		if (Bar.fillAmount == 0f) {
+			isKilled = true;
+		}
 	}
 }

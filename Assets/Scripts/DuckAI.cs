@@ -10,24 +10,28 @@ public class DuckAI : MonoBehaviour
 	public Vector2 direction = new Vector2(1, 0);
 	GameObject egg;
 	public bool duckSound;
+    public Vector3 spawnPos;
+	int eggsNumber = 0;
 
-
+    void Awake() {
+        spawnPos = gameObject.transform.position;
+    }
 	void Start(){
-
 		duckSound = true;
 	}
 
 	void Update(){
 		egg = Resources.Load("eggs duck") as GameObject;
 		var canard = gameObject.transform.position;
-		var player = GameObject.Find("Player");
+        var player = GameObject.Find("Player");
 		Vector2 ppos = player.transform.position;
-		if (canard.y <= 1.6)
+        if (canard.y <= spawnPos.y - 0.5)
 		{
 			Jump();
 		}
-		if ((canard.x - ppos.x) < 0.3 && (canard.x - ppos.x) > 0){
+		if (((canard.x - ppos.x) < 0.3) && ((canard.x - ppos.x) > 0) && (eggsNumber<5) ){
 			GameObject oeuf = Instantiate(egg) as GameObject;
+			eggsNumber++;
 			oeuf.transform.position = transform.position - new Vector3 (0,1,0);
 				if (duckSound == true) {
 				SoundEffectsHelper.Instance.DoDuckSound ();

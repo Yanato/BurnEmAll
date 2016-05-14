@@ -17,6 +17,8 @@ public class BearAI : MonoBehaviour {
 
 	public bool bearCacSound; 
 	public bool playerHited = false;
+	public bool rockHited = false;
+
 
 	private int amount = 2; 
 	GameObject BulletTrailPrefab;
@@ -31,16 +33,22 @@ public class BearAI : MonoBehaviour {
 		if (collider.gameObject.name == "Player")
 		{
 			playerHited = true;
+
+		}
+
+		if (collider.gameObject.name == "Rock")
+		{
+			rockHited = true;
+			Debug.Log (rockHited);
 		}
 	}
 
-
 	void Update () {
+
+
 		var epos = gameObject.transform.position;
-		var player = GameObject.Find("Player");
-		Vector3 ppos = (player.transform.position);
-		Vector2 Sens = new Vector2(ppos.x - epos.x, ppos.y - epos.y).normalized;
-		var xpos = (ppos.x - epos.x);
+		Vector2 Sens = new Vector2(PlayerControllerV3.ppos.x - epos.x, PlayerControllerV3.ppos.y - epos.y).normalized;
+		var xpos = (PlayerControllerV3.ppos.x - epos.x);
 
 		if(Sens.x > 0) 
 		{
@@ -72,24 +80,27 @@ public class BearAI : MonoBehaviour {
 		}
 
 		if (goBacka == true) {
-			if (xpos < 8) {
+			if ((xpos < 8) && !rockHited) {
 				gameObject.transform.localScale = new Vector3 (1, 1, 1);
 				GetComponent<Rigidbody2D> ().velocity = new Vector2 (-moveSpeed, GetComponent<Rigidbody2D> ().velocity.y);
-			}else {
+			}
+			if ((xpos >8) || rockHited){
 				shoota = true;
 				SoundEffectsHelper.Instance.DoBearSoundCac();
+				rockHited = false;
 
 			}
 		}
 
 		if (goBackb == true) {
-			if (xpos > -8) {
+			if ((xpos > -8) && !rockHited) {
 				gameObject.transform.localScale = new Vector3 (-1, 1, 1);
 				GetComponent<Rigidbody2D> ().velocity = new Vector2 (moveSpeed, GetComponent<Rigidbody2D> ().velocity.y);
-			}else {
+			}
+			if ((xpos < -8) || rockHited){
 				shootb = true;
 				SoundEffectsHelper.Instance.DoBearSoundCac();
-
+				rockHited = false;
 			}
 		}
 

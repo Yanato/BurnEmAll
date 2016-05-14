@@ -120,3 +120,12 @@
                      et       - Ajout d'une nouvelle plateform
                     Mickael   - Debut du level design
                               - Texte intro et bouttons pour android prennent désormais en compte la taille de l'écran.
+14/05/2016 V1.2.4 - Mickael : - patch du problème d'optimisation récent, les monstres sont désactivés tant que le perso n'est pas proche
+                     et       - patch de la vie (plus de problème quand le perso est à 0 hp, il est bien mort
+                    Antoine   - ours : modification du script, fait demi tour au bout de sa grotte + fin du jeu quand il est mort
+ thibault était présent mais  - débug du droprate 
+pas utile                     - canard haut et bas en fonction de la position initial du canard (et pas une poisition fixe comme avant)
+                              - dosage des HP
+                              - les montagnes suivent désormais avec un effet de paralax et sont biens positionnés lors d'un checkpoint.
+                              - les canards ne peuvent pondre que 5 oeufs maximum
+                              - écran de fin lorsqu'on tue l'ours avec une musique qui s'active.

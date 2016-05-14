@@ -9,21 +9,27 @@ public class SpawnMonster : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        hasSpawn = false;
 		spawnPos = gameObject.transform.position;
+		foreach( Transform child in transform )
+		{
+			child.gameObject.SetActive( false );
+		}         
+		hasSpawn = false;
+
     }
 
     void Update()
     {
-        var enn = gameObject.transform.position;
-        var player = GameObject.Find("Player");
-		Vector3 ppos = (player.transform.position);
         if (hasSpawn == false)
         {
-			gameObject.transform.position = spawnPos;
-            if ((enn.x - ppos.x) < 14)
+			if ((spawnPos.x - PlayerControllerV3.ppos.x) < 14)
             {
-                hasSpawn = true;
+				foreach( Transform child in transform )
+				{
+					child.gameObject.SetActive( true );
+					child.transform.position = spawnPos;
+				} 
+				hasSpawn = true;
             }
         }
     }

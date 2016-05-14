@@ -28,6 +28,8 @@ public class PlayerControllerV3 : MonoBehaviour {
 	public static bool disableEnnemy;
 	public GameObject ennemy;
 
+	public static Vector3 ppos;
+
 	void Start()
 	{
 		disableEnnemy = true;
@@ -41,6 +43,9 @@ public class PlayerControllerV3 : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+		ppos = gameObject.transform.position;
+
 			anim.SetBool ("Grounded", grounded);
 			anim.SetFloat ("Speed", Mathf.Abs (Input.GetAxis ("Horizontal")));
 			if (Input.GetAxis ("Horizontal") < -0.1f) {

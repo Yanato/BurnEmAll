@@ -31,9 +31,7 @@ public class RabbitAI : MonoBehaviour {
 		}
 
 		var epos = gameObject.transform.position;
-		var player = GameObject.Find("Player");
-		Vector3 ppos = (player.transform.position);
-		Vector2 Sens = new Vector2(ppos.x - epos.x, ppos.y - epos.y).normalized;
+		Vector2 Sens = new Vector2(PlayerControllerV3.ppos.x - epos.x, PlayerControllerV3.ppos.y - epos.y).normalized;
 
 
 

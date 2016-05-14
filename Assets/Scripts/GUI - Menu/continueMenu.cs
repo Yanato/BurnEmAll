@@ -11,6 +11,9 @@ public class continueMenu : MonoBehaviour {
 	public GameObject sky1;
 	public GameObject sky2;
 
+	public GameObject moutain1;
+	public GameObject moutain2;
+
 	public static Vector3 CheckpointPosition;
 
 	void Update(){
@@ -34,10 +37,15 @@ public class continueMenu : MonoBehaviour {
 		if (Checkpoint.check == true) {
 			Camera.transform.position = new Vector3 (CheckpointPosition.x, 0, 5);
 			Player.transform.position = new Vector3 (Camera.transform.position.x, 0, 5);
+			moutain1.transform.position = new Vector3 (Camera.transform.position.x, -0.8f, 8f);
+			moutain2.transform.position = new Vector3 (Camera.transform.position.x, 0f, 9f);
+
 
 		} else {
 			Camera.transform.position = new Vector3 (0, 0, 5);
 			Player.transform.position = new Vector3 (-7f, -2.5f, 5f);
+			moutain1.transform.position = new Vector3 (0f, -0.8f, 8f);
+			moutain2.transform.position = new Vector3 (0f, 0f, 9f);
 
 		}
 		Debug.Log (Camera.transform.position);

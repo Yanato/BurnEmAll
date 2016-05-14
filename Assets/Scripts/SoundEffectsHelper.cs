@@ -27,6 +27,7 @@ public class SoundEffectsHelper : MonoBehaviour
 	public AudioClip degat5;
 	public AudioClip degat6;
 
+	public AudioClip win;
 
 	void Awake()
 	{
@@ -37,6 +38,10 @@ public class SoundEffectsHelper : MonoBehaviour
 		Instance = this;
 	}
 
+	public void DoWinSound()
+	{
+		MakeSound (win);
+	}
 	public void DoDuckSound()
 	{
 		MakeSound(DuckSound);
