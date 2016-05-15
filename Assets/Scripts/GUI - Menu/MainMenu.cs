@@ -17,11 +17,13 @@ public class MainMenu : MonoBehaviour {
 	public GameObject menuSound;
 	public GameObject credits;
 
+	public static bool isFrench;
 	// Use this for initializationj
 
 	void Start (){
 		menuSound.SetActive (true);
 		credits.SetActive (false);
+		isFrench = false;
 	}
 
 	// Update is called once per frame
@@ -35,6 +37,15 @@ public class MainMenu : MonoBehaviour {
 			}
 
 	}
+
+	public void French(){
+		isFrench = true;
+	}	
+	public void English(){
+		isFrench = false;
+	}
+
+
 	public  void StartGame() {
 
 		DisableContinue = false;
@@ -44,7 +55,7 @@ public class MainMenu : MonoBehaviour {
 		} else {
 			DisableContinue = false;
 			SceneManager.LoadScene ("Level1");
-			HealthBar.cur_health = 10;
+			HealthBar.cur_health = 100;
 			HealthBar.life = 3;
 		}
 	}
@@ -52,7 +63,7 @@ public class MainMenu : MonoBehaviour {
 	public void Continue(){
 		
 		SceneManager.LoadScene ("Level1");
-		HealthBar.cur_health = 10;
+		HealthBar.cur_health = 100;
 		checkpointe = true;
 	}
 

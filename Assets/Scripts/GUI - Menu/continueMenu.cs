@@ -33,7 +33,7 @@ public class continueMenu : MonoBehaviour {
 	public void Continue (){
 
 		HealthBar.isContinue = false;
-		HealthBar.cur_health = 10;
+		HealthBar.cur_health = 100;
 		if (Checkpoint.check == true) {
 			Camera.transform.position = new Vector3 (CheckpointPosition.x, 0, 5);
 			Player.transform.position = new Vector3 (Camera.transform.position.x, 0, 5);
@@ -42,10 +42,11 @@ public class continueMenu : MonoBehaviour {
 
 
 		} else {
-			Camera.transform.position = new Vector3 (0, 0, 5);
-			Player.transform.position = new Vector3 (-7f, -2.5f, 5f);
-			moutain1.transform.position = new Vector3 (0f, -0.8f, 8f);
-			moutain2.transform.position = new Vector3 (0f, 0f, 9f);
+			HealthBar.isDead = false;
+			HealthBar.cur_health = 100;
+			HealthBar.life = 3;
+			SceneManager.LoadScene ("Level1");
+			Checkpoint.check = false;
 
 		}
 		Debug.Log (Camera.transform.position);

@@ -21,6 +21,16 @@ public class MagicarpeDamage : MonoBehaviour {
 			boom.transform.position = gameObject.transform.position;
 			Destroy(gameObject);
 		}
+		if (coll.gameObject.name == "bullet(Clone)")
+		{
+			Destroy(gameObject);
+		}
 	}
+	void OnParticleCollision(GameObject other)
+	{
+		Destroy(gameObject);
+
+	}
+
 
 }

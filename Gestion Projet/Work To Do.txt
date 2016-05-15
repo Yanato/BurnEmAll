@@ -1,11 +1,10 @@
 ﻿à faire pour finir le principale du jeu (par priorité):
 
+le sol qui bug
 
-gerer les pdvs du perso et ceux des ennemies, remettre les canard au bon endroit + test le level.
+
 
 Autre : Export Android ?
-
-
 
 
 ___

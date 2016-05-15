@@ -20,7 +20,7 @@ public class TexteCredit : MonoBehaviour {
 		xpos = Player.transform.position.x;
 		if (-8<xpos && xpos < -5) {
 			texte.text = "Development / Code :";
-			names.text = "TOUCHAIS Mickael\nCHOU Antoine\nMESSE Thibault";
+			names.text = "TOUCHAIS Mickael\nCHOU Antoine\nMESSÉ Thibault";
 		}
 		if (-5<xpos && xpos<-2){
 			texte.text = "Graphic design :";		
@@ -28,12 +28,12 @@ public class TexteCredit : MonoBehaviour {
 		}
 		if (-2 < xpos && xpos< 1) {
 			texte.text = "Sounds effect / Musics:";
-			names.text = "TOUCHAIS Mickael\nMESSE Thibault (bear sound)\n'Drorki' (duck sound)\n\nLENCOU Quentin : Overworld\n(8bit music)             Spark Ignition Madness\n                                Prelude to rampage\nL'hermite moderne : ''Je code avec le cul''";
+			names.text = "MESSE Thibault (bear sound)\n'Drorki' (duck sound)\n'Benjoy' (Character sound)\n\nLENCOU Quentin : Overworld\n(8bit music)             Spark Ignition Madness\n                                Prelude to rampage\nL'hermite moderne : ''Je code avec le cul''";
 
 		}
 		if (1 < xpos && xpos< 4) {
 			texte.text = "Assistants / Helper / Advisors :";
-			names.text = "Flamoure (pyroman assistant)\nJonathan & Gaetan (erradikateur dé fote)";
+			names.text = "Flamoure (pyroman assistant)\nJonathan & Gaetan (spelling mistakes correction)\nMASSOUÉ Germain (english traduction)\nLENCOU Quentin (ideas and beta test)";
 		}
 		if (4 < xpos && xpos< 8) {
 			texte.text = "Betatesters :";

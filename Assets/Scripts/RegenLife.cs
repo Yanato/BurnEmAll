@@ -9,9 +9,13 @@ public class RegenLife : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D coll)
     {
 		if (coll.gameObject.name == "Player") {
-			if (HealthBar.cur_health < 10) {
-				HealthBar.cur_health++;
+			if (HealthBar.cur_health < 90) {
+				HealthBar.cur_health = HealthBar.cur_health + 10;
+
+			} else {
+				HealthBar.cur_health = 100;
 			}
+
 			Destroy (gameObject);
 		}
 		if (i != 1) {

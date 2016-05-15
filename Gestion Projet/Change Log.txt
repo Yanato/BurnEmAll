@@ -125,7 +125,14 @@
                     Antoine   - ours : modification du script, fait demi tour au bout de sa grotte + fin du jeu quand il est mort
  thibault était présent mais  - débug du droprate 
 pas utile                     - canard haut et bas en fonction de la position initial du canard (et pas une poisition fixe comme avant)
-                              - dosage des HP
                               - les montagnes suivent désormais avec un effet de paralax et sont biens positionnés lors d'un checkpoint.
                               - les canards ne peuvent pondre que 5 oeufs maximum
                               - écran de fin lorsqu'on tue l'ours avec une musique qui s'active.
+15/05/2016 V2.0.1 - Mickael : - modification de l'ordre des layers pour ne pas avoir des monstres en arrière plan
+			      - les poissons lancer par l'ours sont désormais tuable
+			      - les lapins ne bloquent plus dans la pente
+			      - doser dégats et hp
+			      - les lapins ne se bloquent plus dans les murs transparant
+			      - choix de la langue pour le texte introductif (anglais français)
+			      - debug et modification systeme de spawn
+                              - plus de collision torche / joueur, si le joueur tire derrière lui, la torche est supprimé

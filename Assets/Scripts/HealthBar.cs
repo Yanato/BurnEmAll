@@ -10,8 +10,8 @@ public class HealthBar : MonoBehaviour
 	public Image Bar;	
 	public RectTransform TailleBar;
 
-	public int max_health = 10;
-	public static int cur_health = 10;
+	public int max_health = 100;
+	public static int cur_health = 100;
 	public static int life = 3;
 
 	public static bool isDead = false;
@@ -40,7 +40,7 @@ public class HealthBar : MonoBehaviour
 			isContinue = true;
 			isKilled = false;
 			HealthBar.life--;
-			cur_health = 10;
+			cur_health = 100;
 		}
 
 		if (life == 0) {
@@ -81,7 +81,7 @@ public class HealthBar : MonoBehaviour
 		if (collision.gameObject.tag == "flower") 
 		{
 			if (cur_health > 0) {
-				cur_health -= 1;
+				cur_health -= 5;
 				doSound = true;
 				UpdateHealthBar (cur_health);
 				SoundEffectsHelper.Instance.DoFlowerSoundExplosion();
@@ -92,7 +92,7 @@ public class HealthBar : MonoBehaviour
 		if (collision.gameObject.tag == "duck") 
 		{
 			if (cur_health > 0) {
-				cur_health -= 1;
+				cur_health -= 2;
 				doSound = true;
 				UpdateHealthBar (cur_health);
 				SoundEffectsHelper.Instance.DoDuckSound2();
@@ -103,7 +103,7 @@ public class HealthBar : MonoBehaviour
 		if (collision.gameObject.tag == "Bear") 
 		{
 			if (cur_health > 0) {
-				cur_health -= 1;
+				cur_health -= 5;
 				doSound = true;
 				UpdateHealthBar (cur_health);
 			}
@@ -159,7 +159,7 @@ public class HealthBar : MonoBehaviour
 			SoundEffectsHelper.Instance.DoDegat5Sound ();
 			doSound = false;
 		}
-		if ((Bar.fillAmount == 0.2f) && doSound) {
+		if ((Bar.fillAmount == 0.1f) && doSound) {
 			SoundEffectsHelper.Instance.DoDegat6Sound ();
 			doSound = false;
 		}
