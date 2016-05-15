@@ -11,5 +11,6 @@ public class EndMenu : MonoBehaviour {
 	
 	public void credits () {
 		SceneManager.LoadScene ("Menu");
+		MainMenu.DisableContinue = true;
 	}
 }

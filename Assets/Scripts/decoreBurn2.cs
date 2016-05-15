@@ -15,6 +15,7 @@ public class decoreBurn2 : MonoBehaviour {
 	public float ashes = 0.01f;
 	public float limitAshes = 0.005f;
 
+	int i = 0;
 
 	void Start() 
 	{
@@ -43,15 +44,19 @@ public class decoreBurn2 : MonoBehaviour {
 
 		if (r <= 0.50f) 
 		{
+			
 			r = r + limitAshes;
 			g = g + limitAshes;
 			b = b + limitAshes;
 
 		}
 		if (r <= 0.41f && r>= 0.40f) {
-			GameObject fumee = Instantiate (Smoke) as GameObject;         //faire un délai de temps, une limite à 1 et prendre les positions de la torche etc. = pas fini
-			fumee.transform.parent = gameObject.transform;
-			fumee.transform.position = gameObject.transform.position;
+			if (i < 3) {
+				i++;
+				GameObject fumee = Instantiate (Smoke) as GameObject;
+				fumee.transform.parent = gameObject.transform;
+				fumee.transform.position = gameObject.transform.position;
+			}
 		}
 
 		if (r <= 0.15f)

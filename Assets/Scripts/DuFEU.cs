@@ -12,7 +12,7 @@ public class DuFEU : MonoBehaviour
 
 		if ((coll.collider == true)&& (coll.gameObject.tag != "nop"))
         {
-            GameObject Feu = Instantiate(Fire) as GameObject;         //faire un délai de temps, une limite à 1 et prendre les positions de la torche etc. = pas fini
+            GameObject Feu = Instantiate(Fire) as GameObject;
 			Feu.transform.parent = coll.transform;
 			Feu.transform.position = coll.transform.position;
         }

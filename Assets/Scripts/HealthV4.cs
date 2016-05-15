@@ -19,7 +19,7 @@ public class HealthV4 : MonoBehaviour
 	public bool isKilled = false;
 
 	public float damage = 1;
-
+	int i = 0;
 
 	private float r = 1;
 	private float g = 1;
@@ -64,9 +64,12 @@ public class HealthV4 : MonoBehaviour
 		b = b - ashes;
 
 		if (r <= 0.41f && r>= 0.40f) {
-			GameObject fumee = Instantiate (Smoke) as GameObject;
-			fumee.transform.parent = gameObject.transform;
-			fumee.transform.position = gameObject.transform.position;
+			if (i < 3) {
+				i++;
+				GameObject fumee = Instantiate (Smoke) as GameObject;
+				fumee.transform.parent = gameObject.transform;
+				fumee.transform.position = gameObject.transform.position;
+			}
 		}
 
 		GetComponent<SpriteRenderer>().color = new Color (r, g, b, 1);

@@ -120,6 +120,7 @@
                      et       - Ajout d'une nouvelle plateform
                     Mickael   - Debut du level design
                               - Texte intro et bouttons pour android prennent désormais en compte la taille de l'écran.
+
 14/05/2016 V1.2.4 - Mickael : - patch du problème d'optimisation récent, les monstres sont désactivés tant que le perso n'est pas proche
                      et       - patch de la vie (plus de problème quand le perso est à 0 hp, il est bien mort
                     Antoine   - ours : modification du script, fait demi tour au bout de sa grotte + fin du jeu quand il est mort
@@ -128,11 +129,15 @@ pas utile                     - canard haut et bas en fonction de la position in
                               - les montagnes suivent désormais avec un effet de paralax et sont biens positionnés lors d'un checkpoint.
                               - les canards ne peuvent pondre que 5 oeufs maximum
                               - écran de fin lorsqu'on tue l'ours avec une musique qui s'active.
+
 15/05/2016 V2.0.1 - Mickael : - modification de l'ordre des layers pour ne pas avoir des monstres en arrière plan
 			      - les poissons lancer par l'ours sont désormais tuable
 			      - les lapins ne bloquent plus dans la pente
 			      - doser dégats et hp
 			      - les lapins ne se bloquent plus dans les murs transparant
 			      - choix de la langue pour le texte introductif (anglais français)
-			      - debug et modification systeme de spawn
+	   v2.0.2	      - debug et modification systeme de spawn
                               - plus de collision torche / joueur, si le joueur tire derrière lui, la torche est supprimé
+                              - amélioration des dégats et du system de dégat au corps a corps
+                              - la physique du jeu est modifié : le personnage et les monstres ne subissent plus de friction fasse à un mur plane (ils ne peuvent plus rester coller)
+                              - travail d'équilibrage du jeu.

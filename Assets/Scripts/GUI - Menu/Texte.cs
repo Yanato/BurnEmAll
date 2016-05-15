@@ -38,7 +38,7 @@ public class Texte : MonoBehaviour {
 					texte.text = "Il trouva une torche face à lui.\nLa flamme lui parla, le réchauffa, le réconforta\n  mais l’entraîna par la même occasion\n dans la folie et dans la déchéance de son âme.";
 					break;
 				case 5:
-					texte.text = "La natura lui sembla alors hostile :\n - Les lapins eurent tout à coup les yeux luisants. \n - Il pouvait voir des visages sur les fleurs.\n - Les canards avaient un comportement étrange. \n\n  TOUS CES ANIMAUX VOULAIENT SA MORT !";
+					texte.text = "La nature lui sembla alors hostile :\n - Les lapins eurent tout à coup les yeux luisants. \n - Il pouvait voir des visages sur les fleurs.\n - Les canards avaient un comportement étrange. \n\n  TOUS CES ANIMAUX VOULAIENT SA MORT !";
 					break;
 
 				case 7:
