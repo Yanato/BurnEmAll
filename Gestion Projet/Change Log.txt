@@ -142,3 +142,4 @@ pas utile                     - canard haut et bas en fonction de la position in
                               - la physique du jeu est modifié : le personnage et les monstres ne subissent plus de friction fasse à un mur plane (ils ne peuvent plus rester coller)
                               - travail d'équilibrage du jeu.
 16/05/2016 V2.0.2 - Mickael : - ajout systeme de réglage de son.
+			      - ajout texte d'aide au début

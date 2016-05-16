@@ -14,9 +14,24 @@ public class continueMenu : MonoBehaviour {
 	public GameObject moutain1;
 	public GameObject moutain2;
 
+	public GameObject tuto;
+	public static bool isTuto;
+
 	public static Vector3 CheckpointPosition;
 
+	void Start(){
+
+	}
+
 	void Update(){
+
+		if (isTuto) {
+			tuto.SetActive (true);
+		} else {
+			tuto.SetActive (false);
+		}
+
+
 		if (Checkpoint.takePos == true) {
 			CheckpointPosition = Camera.GetComponent<Transform> ().position;
 			Debug.Log (CheckpointPosition);
@@ -28,6 +43,10 @@ public class continueMenu : MonoBehaviour {
 				Player.transform.position = new Vector3 (Camera.transform.position.x, 0, 5);
 			MainMenu.checkpointe = false;
 			}
+	}
+
+	public void ContinueTuto(){
+		isTuto = false;
 	}
 
 	public void Continue (){

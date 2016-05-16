@@ -59,6 +59,8 @@ public class Texte : MonoBehaviour {
 					SceneManager.LoadScene ("Level1");
 					HealthBar.cur_health = 100;
 					HealthBar.life = 3;
+					continueMenu.isTuto = true;
+
 					break;
 				}
 			}
@@ -97,6 +99,7 @@ public class Texte : MonoBehaviour {
 					SceneManager.LoadScene ("Level1");
 					HealthBar.cur_health = 100;
 					HealthBar.life = 3;
+					continueMenu.isTuto = true;
 					break;
 				}
 			}

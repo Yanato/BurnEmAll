@@ -38,7 +38,7 @@ public class PauseMenu : MonoBehaviour {
 		}
 
 
-		if (isPause || HealthBar.isDead || HealthBar.isContinue || Win.end)
+		if (isPause || HealthBar.isDead || HealthBar.isContinue || Win.end || continueMenu.isTuto)
 		{
 			Time.timeScale = 0;
 		}else{
