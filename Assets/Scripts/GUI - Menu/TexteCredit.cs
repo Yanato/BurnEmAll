@@ -33,11 +33,11 @@ public class TexteCredit : MonoBehaviour {
 		}
 		if (1 < xpos && xpos< 4) {
 			texte.text = "Assistants / Helper / Advisors :";
-			names.text = "Flamoure (pyroman assistant)\nJonathan & Gaetan (spelling mistakes correction)\nMASSOUÉ Germain (english traduction)\nLENCOU Quentin (ideas and beta test)";
+			names.text = "Flamoure (pyroman assistant)\nJonathan & Gaetan (spelling mistakes correction)\nMASSOUÉ Germain (english traduction)\nLENCOU Quentin (ideas and tests)";
 		}
 		if (4 < xpos && xpos< 8) {
 			texte.text = "Betatesters :";
-			names.text = "DERRIEN Ronan\nMARTIN Adrien";
+			names.text = "DERRIEN Ronan\nMARTIN Adrien\nMARAQUIN Clément\n'Happyice'\n'FabiusQ'\n'Benjoy'\n'Milazz'";
 		}
 	}
 }

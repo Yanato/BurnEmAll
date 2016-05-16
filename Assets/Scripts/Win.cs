@@ -15,18 +15,25 @@ public class Win : MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-		if (bear == null) {
-			end = true;
-			if (doSound) {
-				SoundEffectsHelper.Instance.DoWinSound ();
-				mainmusic.SetActive (false);
-				doSound = false;
-			}
+		if (EndMenu.restartGame == false) {
 
+			if (bear == null) {
+				end = true;
+				if (doSound) {
+					SoundEffectsHelper.Instance.DoWinSound ();
+					mainmusic.SetActive (false);
+					doSound = false;
+				}
+
+			} else {
+				end = false;
+			}
 		}
 		if (end) {
 			endmenu.SetActive (true);
-
+		} else {
+			endmenu.SetActive (false);
 		}
+
 	}
 }
