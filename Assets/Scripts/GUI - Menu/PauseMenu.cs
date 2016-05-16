@@ -16,14 +16,23 @@ public class PauseMenu : MonoBehaviour {
 	public GameObject pause;
     public GameObject music;
 
+	public Slider mainSlider;
+	public static float volume;
+
+
 	void start ()
 	{
+
 		menu.SetActive(false);
 
 	}
 
 	void Update () 
 	{
+		volume = mainSlider.value;
+		AudioListener.volume = volume;
+
+
 		if (Input.GetKeyDown (KeyCode.Space)) {
 			isPause = !isPause;
 		}
@@ -66,7 +75,6 @@ public class PauseMenu : MonoBehaviour {
 		level.SetActive(false);
 		health.SetActive(false);	
 		healthbar.SetActive(false);
-        music.SetActive(false);
 
 	}
 	public void Return()
@@ -76,7 +84,6 @@ public class PauseMenu : MonoBehaviour {
 		level.SetActive(true);
 		health.SetActive(true);	
 		healthbar.SetActive(true);
-        music.SetActive(true);
 
     }
     public void Website(){

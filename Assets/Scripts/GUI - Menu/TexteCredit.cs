@@ -37,7 +37,7 @@ public class TexteCredit : MonoBehaviour {
 		}
 		if (4 < xpos && xpos< 8) {
 			texte.text = "Betatesters :";
-			names.text = "Names here";
+			names.text = "DERRIEN Ronan\nMARTIN Adrien";
 		}
 	}
 }

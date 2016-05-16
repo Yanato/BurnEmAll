@@ -19,7 +19,6 @@ public class OptionsGUI : MonoBehaviour {
 	public void Return(){
 		options.SetActive(false);
 		mainmenu.SetActive(true);
-		menuSound.SetActive (true);
 
 	}
 
