@@ -1,0 +1,44 @@
+SHEMA = analyse, solution mise en place, "extensions prévus" ??
+
+Organisation projet
+détailler repartition des roles
+liste répartition du travail
++
+Teamspeak et skype pour la communication
+Github pour gerer les fichiers entre nous sur tout le projet
+Dans le dossier du jeu : 
+- fichier "change log disant la version du jeu et le travail de chacun"
+- "work to do" fichier disant le travail a réaliser.
++
+déroulement du projet (initial) puis réel
+présentation objectif projet
+
+justificer pourquoi C#
+analyser besoin phase de conception du jeu
+= justifier solution adapté au traitement informatique = ordinateur
+
+
+structure du code
+structurer les données = solution a justifier ?
+explication et justification de boucle et if dans le code
+explication de fonctions + présenter une fonction du code
+différents type de variable a expliquer
++++++ ajouter commentaires dans le code
+
+
+grand principe d'un system (technique) aspect technique code algo
+répondre au question sur les instructions (=algo) utilisé
+structurer le code..
+
+
+
+MISE EN PLACE DU GROUPE
+CHOIX DU PROJET
+POURQUOI LE PROJET = justifier l'intéret
+PRESENTATION INITAL DU PROJET = idée groupe brainstorming 
+objectifs au fil du temps (adapation)
+QUEL SOLUTIONS POUR LE PROJET = presenter unity et c#
+REPARTITION DES TACHES
+ORGANISATION DU TRAVAIL EN GROUPE AVEC L'AIDE DE LOGICIELS
+
+j'ai pas fini

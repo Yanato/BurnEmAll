@@ -1,0 +1,43 @@
+1ère page :
+présentation rapide du groupe 
+
+
+2 ème page:
+Pourquoi ?
+Un jeu permet de mobiliser de façon concrète (quasiment) toutes les notions 
+vues en ISN. On retrouve ainsi dans les scripts: Les fonctions, boucles, variables, conditions... et d'autres (bibliothèque unity --->>
+>> ils vont vous poser la question c'est quoi une biblio ?)
+La partie graphique et le son qui est appelé dans les scripts. 
+Un jeu permet de compiler tous les diffèrents éléments pour en faire un ensemble cohérent.
+Concrète car le résultat est visualisable. 
+
+3ème page : 
+Présentation de unity, pourquoi avoir utilisé unity et le C# 
+J'ai laissé les points qui me semblaient importants :
+- Moteur de jeu puissant (ils vont surement vous demander la définition d'un moteur de jeu).
+- Prise en main rapide : Il faudrait dire que c'est assez intuitif, c'est du concret
+(on a le résultat directement sur la scène) on peut ajouter qu'il existe bcp de tuto aussi.
+- Complet : y'a rien à ajouter dessus. Il y'a beaucoup d'éléments : asset store, les fonctions déjà présentes dans unity (rigidbody,collider,position,rotation...)
+- Gratuit (et donc accessible pour tous) : Juiffard , le correcteur propose soiffard
+
+Les deux premières pages ne devraient pas excéder 2-3 minutes.
+
+4ème page
+Bon là il faut développer
+ex : Le dossier regroupe tous les éléments (aussi bien extérieurs qu'intérieurs au jeu).
+On peut ajouter/supprimer/modifier tous les éléments.
+Il est bien sur plus facile de travailler en regroupant tous les éléments de meme famille.
+
+5ème page:
+Expliquer comment on a utilisé github, comment ça fonctionne ça ne devrait pas être trop difficile
+si on n'entre pas dans les détails.
+
+6ème page:
+Sic parvis magna
+
+7ème page:
+Dans le meilleur des cas il faudrait choisir les codes les plus complets mais le problème c'est que les
+questions risquent d'être très techniques aussi (Je sais que Mickaël peut y répondre puisque il a bossé partout)
+faites donc des choix intelligents illustrant le travail que vous avez fait et bien sûr la 7ème page n'est pas forcément la dernière
+
+ 
